@@ -1,118 +1,123 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Navbar from "@/components/Navbar";
+import Link from "next/link";
+import { useState } from "react";
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [links, setLinks] = useState("")
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="h-screen w-screen flex ">
+        {/* <Navbar /> */}
+
+        <div className="flex-1 h-full pl-10 pt-24">
+          <h2 className="text-5xl font-semibold mb-3 uppercase">
+            Koye Adeyombo
+          </h2>
+          <h4 className="text-xl font-light mb-5">
+            Frontend Developer {/*//at QClose*/}
+          </h4>
+          <h6 className=" pr-32 text-lg font-light mb-6">
+          I develop web-based products and digital experiences that prioritize accessibility and inclusivity.
+          </h6>
+
+          <div>
+            <Link href={'#about'} onClick={() => setLinks("ABOUT")} className="flex items-center group space-x-2">
+              <div className={`${links === "ABOUT" ? 'w-[55px]' : 'w-[32px]'} group-hover:w-[55px] transition-all duration-300 ease-in-out  bg-black h-[2px] `} />
+              <span className="font-medium tracking-wide group-hover:tracking-wider text-lg">ABOUT</span>
+            </Link>
+            <Link href={'#experience'} onClick={() => setLinks("EXP")} className="flex items-center group space-x-2 my-4">
+              <div className={`${links === "EXP" ? 'w-[55px]' : 'w-[32px]'} group-hover:w-[55px] transition-all duration-300 ease-in-out  bg-black h-[2px] `} />
+              <span className="font-medium tracking-wide group-hover:tracking-wider text-lg">EXPERIENCE</span>
+            </Link>
+            <Link href={'#projects'} onClick={() => setLinks("PRO")} className="flex items-center group space-x-2">
+              <div className={`${links === "PRO" ? 'w-[55px]' : 'w-[32px]'} group-hover:w-[55px] transition-all duration-300 ease-in-out  bg-black h-[2px] `} />
+              <span className="font-medium tracking-wide group-hover:tracking-wider text-lg">PROJECTS</span>
+            </Link>
+          </div>
+
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className="flex-1 overflow-y-scroll h-full pr-10 text-lg font-light">
+          <div id="about" className="pt-24"> 
+            <p>
+            Hello! I'm Koye, a dedicated web developer with a passion for <strong className="font-medium">crafting digital experiences that stand out.</strong>   Whether you're an entrepreneur with a startup idea or an established business looking to enhance your online presence, I'm here to <strong className="font-medium"> transform your vision into reality.</strong>
+            </p>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <p className="my-5 mb-16">
+            I embarked on my web development journey with a mission to bring innovation and creativity to the digital world. Over the years, I've had the privilege of working on a diverse range of projects, each contributing to my growth and expertise. From small businesses to large corporations, I've helped clients achieve their online goals.
+            </p>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div id="experience" className="pt-16">
+            <div className="flex space-x-4 hover:bg-gray-100 p-2 rounded-xl border-[2.5px] border-black border-l-[5px] border-b-[5px] cursor-pointer my-3 mb-7">
+              <div className="font-medium flex-1"><span>MAY '23</span> - <span>PRESENT</span> </div>
+              <div className='flex-[2.5] ' >
+                <h4 className="font-medium mb-2">
+                  Frontend Engineer . QClose
+                </h4>
+                <div className="text-base">
+                  <ul className="">
+                    <li className="list-item list-disc">Collaborated with UX/UI designers to translate wireframes and mockups into interactive web interfaces.</li>
+                    <li className="list-item list-disc">Implemented cross-browser compatibility and optimized website performance for fast loading times.</li>
+                    <li className="list-item list-disc">Utilized frontend frameworks such as React.js to build dynamic and data-driven web applications.</li>
+                    <li className="list-item list-disc">Integrated RESTful APIs to fetch and display real-time data, enhancing the overall user experience.</li>
+                    <li className="list-item list-disc">Implemented and maintained version control using Git and GitHub, ensuring seamless code collaboration.</li>
+                    <li className="list-item list-disc">Worked closely with backend developers to integrate frontend and backend components, ensuring seamless functionality.</li>
+                  </ul>
+                </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+              </div>
+            </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <div className="flex space-x-4 hover:bg-gray-100 p-2 rounded-xl border-[2.5px] border-black border-l-[5px] border-b-[5px] cursor-pointer my-3">
+              <div className="font-medium flex-1"><span>MAR '22</span> - <span>OCT '22</span> </div>
+              <div className='flex-[2.5] ' >
+                <h4 className="font-medium mb-2">
+                  Junior Frontend Developer . Zeta Tech
+                </h4>
+                <div className="text-base">
+                  <ul className="">
+                    <li className="list-item list-disc">Assisted in the development of web applications using HTML, CSS, and JavaScript.</li>
+                    <li className="list-item list-disc">Contributed to the optimization of website performance and responsiveness.</li>
+                    <li className="list-item list-disc">Worked closely with senior developers to troubleshoot and debug code issues.</li>
+                    <li className="list-item list-disc">Participated in code reviews and learned coding best practices.</li>
+                    <li className="list-item list-disc">Gained proficiency in frontend technologies and improved coding skills.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            
+            <div className="flex space-x-4 hover:bg-gray-100 p-2 rounded-xl border-[2.5px] border-black border-l-[5px] border-b-[5px] cursor-pointer my-3">
+              <div className="font-medium flex-1"><span>MAR '21</span> - <span>PRESENT</span> </div>
+              <div className='flex-[2.5] ' >
+                <h4 className="font-medium mb-2">
+                  Frontend Developer . Freelance
+                </h4>
+                <div className="text-base">
+                  <ul className="">
+                    <li className="list-item list-disc">Collaborated with clients to understand project requirements and goals.</li>
+                    <li className="list-item list-disc">Designed and developed custom websites and web applications from scratch.</li>
+                    <li className="list-item list-disc">Implemented responsive designs, ensuring a seamless user experience on all devices.</li>
+                    <li className="list-item list-disc">Utilized frontend frameworks (React, Next.js) to build interactive and dynamic user interfaces.</li>
+                    <li className="list-item list-disc">Integrated RESTful APIs and third-party services to fetch and display data.</li>
+                    <li className="list-item list-disc">Completed projects within budget and deadlines, earning positive client feedback.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div>
+              <Link href={'/'}>
+                <span>View Full Résumé</span>
+
+              </Link>
+            </div>
+
+
+          </div>
+        </div>
+    </div>
   )
 }
