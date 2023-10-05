@@ -10,6 +10,8 @@
 
 @layer base {
   body {
-    @apply bg-[#fff] text-black min-h-screen ;
+    @apply bg-[#072238] text-[#ddd] min-h-screen ;
   }
 }
+
+/* text-[#16d298] */
