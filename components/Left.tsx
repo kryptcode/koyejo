@@ -10,7 +10,7 @@ const Left = () => {
             Koye <br /> Adeyombo
           </h2>
           <h4 className="text-xl font-medium mb-5">
-            Frontend Developer {/*//at QClose*/}
+            Fullstack Developer {/*//at QClose*/}
           </h4>
           <h6 className=" pr-32 text-lg font-light mb-6">
           I develop web-based products and digital experiences that prioritize accessibility and inclusivity.

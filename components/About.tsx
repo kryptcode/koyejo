@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div id="about" className="pt-16 font-medium"> 
         <p>
-            Hello! I'm Koye, a dedicated web developer with a passion for <strong className="font-medium text-blue-700">crafting digital experiences that stand out.</strong>   Whether you're an entrepreneur with a startup idea or an established business looking to enhance your online presence, I'm here to <strong className="font-medium text-blue-700"> transform your vision into reality.</strong>
+            Hello! I'm Koye, a dedicated web developer with a passion for <strong className="">crafting digital experiences that stand out.</strong>   Whether you're an entrepreneur with a startup idea or an established business looking to enhance your online presence, I'm here to <strong className=""> transform your vision into reality.</strong>
         </p>
 
         <p className="my-5 mb-8">
