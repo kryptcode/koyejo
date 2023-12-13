@@ -5,32 +5,9 @@
         "description": "A fake online shopping application where you can shop for audio devices. It also provides features such as cart management multi-page routing etc.",
         "bg": "#a7f3d0",
         "techs": ["Next.js", "Context API", "TailwindCSS"],
-        "img": "https://i.ibb.co/LNKw9tz/Screenshot-2023-07-14-at-17-07-07-Audiophile-Home.png",
+        "img": "https://i.ibb.co/cXbLmBw/Screenshot-2023-12-13-at-21-07-57-Audiophile.png",
         "live_url": "https://audio-phile-eight.vercel.app/",
         "code_url": "https://github.com/kryptcode/audiophile",
-        "rev": true
-    },
-    {  
-        "id": 2,
-        "name": "Printico",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto facere illo atque molestias impedit repellendus voluptatibus recusandae praesentium dolorum veritatis.",
-        "bg": "#c7d2fe",
-        "techs": ["Next.js", "TailwindCSS"],
-        "img": "https://i.ibb.co/KLW5zM2/Screenshot-2023-07-14-at-17-23-09-Printico-Shop.png",
-        "live_url": "https://printico.vercel.app",
-        "code_url": "https://github.com/kryptcode/printico",
-        "rev": false
-
-    },
-    {
-        "id": 3,
-        "name": "myteam",
-        "description": "A multipage website powered by nextjs and tailwindcss",
-        "bg": "#fecdd3",
-        "techs": ["Next.js", "TailwindCSS"],
-        "img": "https://i.ibb.co/NVdKq7S/Screenshot-2023-07-14-at-17-17-38-myteam-Home.png",
-        "live_url": "https://myteam-pi.vercel.app",
-        "code_url": "https://github.com/kryptcode/myteam",
         "rev": true
     },
     {
@@ -39,57 +16,55 @@
         "description": "Streamin app powered by TMDb API",
         "bg": "#a7f3d0",
         "techs": ["Next.js", "TMDb API", "TailwindCSS", "Recoil"],
-        "img": "https://i.ibb.co/g43TKmk/Screenshot-2023-07-17-at-21-23-53-Hulu-Clone.png",
+        "img": "https://i.ibb.co/VwQyrVT/Screenshot-2023-12-13-at-21-13-53-Hulu-Clone.png",
         "live_url": "https://hulu-clone-rose-nine.vercel.app",
         "code_url": "https://github.com/kryptcode/hulu-clone",
         "rev": false
 
     },
     {
-        "id": 6,
-        "name": "Car Rentals",
-        "description": "Multi-page website for car rental website",
-        "bg": "#a7f3d0",
-        "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
-        "img": "https://i.ibb.co/BKTq4LK/Screenshot-2023-07-14-at-17-14-15-CRentals.png",
-        "live_url": "https://c-rentals.vercel.app",
-        "code_url": "https://github.com/kryptcode/c-rentals",
-        "rev": true
-
-    },
-    {
         "id": 7,
-        "name": "Panpie",
+        "name": "Pan Buddies",
         "description": "Multi-page website for pizza shop.",
         "bg": "#a7f3d0",
         "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
-        "img": "https://i.ibb.co/7273Pq0/Screenshot-2023-07-14-at-17-21-34-Pan-Buddies-Home.png",
+        "img": "https://i.ibb.co/m8tVb5y/Screenshot-2023-12-13-at-21-52-58-Pan-Buddies-Home.png",
         "live_url": "https://pizza-boys.vercel.app/",
         "code_url": "https://github.com/kryptcode/pizza-boys",
         "rev": false
 
     },
     {
-        "id": 7,
-        "name": "Gymate",
-        "description": "Multi-page website for gym.",
-        "bg": "#a7f3d0",
-        "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
-        "img": "https://i.ibb.co/r3LBBqX/Screenshot-2023-07-14-at-17-20-51-Gymate.png",
-        "live_url": "https://gymate-inky.vercel.app/",
-        "code_url": "https://github.com/kryptcode/gymate",
-        "rev": true
-
-    },
-    {
-        "id": 7,
+        "id": 8,
         "name": "Steam Deck-ish",
         "description": "Multi-page clone of Steam deck website.",
         "bg": "#a7f3d0",
         "techs": ["Reactjs", "Vite", "TailwindCSS", "Recoil"],
-        "img": "https://i.ibb.co/xSCyxvF/Screenshot-2023-07-14-at-17-16-15-Vite-React.png",
+        "img": "https://i.ibb.co/7VMnMGN/Screenshot-2023-12-13-at-21-15-28-Vite-React.png",
         "live_url": "https://steam-deck.vercel.app/",
         "code_url": "https://github.com/kryptcode/steam-deck",
+        "rev": false
+    },
+    {
+        "id": 10,
+        "name": "QClose Inventory",
+        "description": "Multi-page clone of Steam deck website.",
+        "bg": "#a7f3d0",
+        "techs": ["Nextjs", "Zustand", "TailwindCSS", "Recoil"],
+        "img": "https://i.ibb.co/PGH3kt2/Screenshot-2023-12-13-at-21-08-57-QClose-Inventory.png",
+        "live_url": "https://qcloseinventory.com",
+        "code_url": "",
+        "rev": false
+    },
+    {
+        "id": 11,
+        "name": "Cryptid Chronicles",
+        "description": "Multi-page clone of Steam deck website.",
+        "bg": "#a7f3d0",
+        "techs": ["Nextjs", "Prisma", "TailwindCSS", "MongoDB"],
+        "img": "https://i.ibb.co/CQ96xV2/Screenshot-2023-12-13-at-21-11-20-Cryptids-Finder.png",
+        "live_url": "https://steam-deck.vercel.app/",
+        "code_url": "",
         "rev": false
     }
 ]
