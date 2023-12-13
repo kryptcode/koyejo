@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen flex ">
+    <div className=" md:h-screen w-screen flex flex-col md:flex-row ">
       <Left />
       <Right />
     </div>

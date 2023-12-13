@@ -4,10 +4,11 @@ import React from 'react'
 const Experience = () => {
   return (
     <div id="experience" className="pt-16">
-        <div className="flex space-x-4 hover:bg-[] p-2  rounded-xl border-[2.5px] border-black border-l-[5px] border-b-[5px] cursor-pointer my-3 mb-7">
-              <div className="font-medium flex-1 text-[#16d298]"><span>MAY '23</span> - <span>PRESENT</span> </div>
+      <h4 className='text-2xl mb-5 font-medium'>Work Experience</h4>
+        <div className="flex space-x-4 hover:bg-[] p-2  rounded-xl  border-[2.5px] border-black border-l-[5px] border-b-[5px] cursor-pointer my-3 mb-7">
+              <div className="font-medium flex-1"><span>MAY '23</span> - <span>PRESENT</span> </div>
               <div className='flex-[2.5] ' >
-                <h4 className="font-medium mb-2 text-[#16d298]">
+                <h4 className="font-medium mb-2">
                   Frontend Engineer . QClose
                 </h4>
                 <div className="text-base">
@@ -24,10 +25,10 @@ const Experience = () => {
               </div>
         </div>
 
-        <div className="flex space-x-4 hover:bg-[] p-2 rounded-xl border-[2.5px] border-[#16d298] border-l-[5px] border-b-[5px] cursor-pointer my-3 mb-7">
-            <div className="font-medium flex-1 text-[#16d298]"><span>MAR '22</span> - <span>OCT '22</span> </div>
+        <div className="flex space-x-4 hover:bg-[] p-2 rounded-xl border-[2.5px]  border-black border-l-[5px] border-b-[5px] cursor-pointer my-3 mb-7">
+            <div className="font-medium flex-1 "><span>MAR '22</span> - <span>OCT '22</span> </div>
             <div className='flex-[2.5] ' >
-                <h4 className="font-medium mb-2 text-[#16d298]">
+                <h4 className="font-medium mb-2 ">
                   Junior Frontend Developer . Zeta Tech
                 </h4>
                 <div className="text-base">
@@ -44,9 +45,9 @@ const Experience = () => {
         </div>
             
         <div className="flex space-x-4 hover:bg-[] p-2 rounded-xl border-[2.5px] border-black border-l-[5px] border-b-[5px] cursor-pointer my-3">
-            <div className="font-medium flex-1 text-[#16d298]"><span>MAR '21</span> - <span>PRESENT</span> </div>
+            <div className="font-medium flex-1 "><span>MAR '21</span> - <span>PRESENT</span> </div>
             <div className='flex-[2.5] ' >
-                <h4 className="font-medium mb-2 text-[#16d298]">
+                <h4 className="font-medium mb-2 ">
                   Frontend Developer . Freelance
                 </h4>
             <div className="text-base">
@@ -63,11 +64,11 @@ const Experience = () => {
             </div>
         </div>
 
-        <div>
-            <Link href={'/'}>
-                <span>View Full Résumé</span>
+        {/* <div className='my-10'>
+            <Link href={'/'} className='border-[2.4px] p-1.5 px-3 border-black border-l-[4.2px] border-b-[4.2px] hover:bg-black/10 rounded-md'>
+                <span>View Résumé</span>
             </Link>
-        </div>
+        </div> */}
 
 
     </div>
