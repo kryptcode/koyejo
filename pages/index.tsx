@@ -1,6 +1,7 @@
 import Left from "@/components/Left";
 import Navbar from "@/components/Navbar";
 import Right from "@/components/Right";
+import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import AnimatedCursor from "react-animated-cursor";
@@ -9,6 +10,10 @@ import AnimatedCursor from "react-animated-cursor";
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Koyejo | Dev</title>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+    </Head>
     <AnimatedCursor
           innerSize={8}
           outerSize={35}

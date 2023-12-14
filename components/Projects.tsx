@@ -9,7 +9,7 @@ const Projects = () => {
         <div className="w-full carousel carousel-vertical carousel-center h-[62vh] mb-16 p-2 rounded-xl border-[2.5px]  border-black border-l-[5px] border-b-[5px]">
             {
                 data.map((project, index) => (
-                    <div key={index} className="carousel-item h-full my-2 flex-col   ">
+                    <div key={index} className="carousel-item h-full my-2 flex-col cursor-all-scroll   ">
                         <div className="h-[40vh] w-full overflow-hidden p-2">
                             <img className="h-full w-full object-contain rounded-xl" src={project.img} alt="" />
                         </div>

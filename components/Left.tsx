@@ -6,13 +6,13 @@ const Left = () => {
     const [links, setLinks] = useState("")
   return (
     <div className="flex-1 h-full pl-10 pt-16">
-          <h2 className="text-6xl md:text-7xl text-black font-black mb-3 uppercase">
+          <h2 className="text-5xl lg:text-7xl text-black font-black mb-3 uppercase">
             Koye <br /> Adeyombo
           </h2>
           <h4 className="text-xl font-medium mb-5">
             Fullstack Developer {/*//at QClose*/}
           </h4>
-          <h6 className=" pr-32 text-lg font-light mb-6">
+          <h6 className=" pr-16 text-lg font-light mb-6">
           I develop web-based products and digital experiences that prioritize accessibility and inclusivity.
           </h6>
 
@@ -50,7 +50,7 @@ const Left = () => {
             <Link href={'/'} className='border-[2.4px] font-light p-1.5 px-3 border-black border-l-[4.2px] border-b-[4.2px] hover:bg-black/10 rounded-md'>
                 <span>View Résumé</span>
             </Link>
-        </div>
+            </div>
 
         </div>
   )
