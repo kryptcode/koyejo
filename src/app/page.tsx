@@ -14,8 +14,8 @@ export default function Home() {
 
   return (
     <>
-      <main className="h-screen scrollbar-none flex bg-black text-white justify-center items-center relative">
-        <div className="w-1/2">
+      <main className="min-h-screen scrollbar-none flex bg-black text-white justify-center items-center relative">
+        <div className="w-[80%] lg:w-1/2">
           <div className=" w-full bg-morph p-5">
             <h4 className="font-inter font-medium text-2xl mb-3">Hi, I'm</h4>
             <h2 className="font-grotesk text-6xl font-bold mb-7">Koye</h2>
