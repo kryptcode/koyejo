@@ -8,8 +8,7 @@ const content = [
     title: "QClose Inventory",
     description:
       "A feature-rich inventory website which combines cutting-edge inventory management, seamless point of sale integration, and convenient in-app chat functionality.",
-    github: "https://",
-    live: "https:",
+    live: "https://qcloseinventory.com",
     img: "https://i.ibb.co/PGH3kt2/Screenshot-2023-12-13-at-21-08-57-QClose-Inventory.png",
     tools: ["https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg", "https://www.svgrepo.com/show/374118/tailwind.svg", "https://www.svgrepo.com/show/353729/fastify-icon.svg"],
     content: (
@@ -19,20 +18,14 @@ const content = [
     ),
   },
   {
-    title: "Real time changes",
+    title: "Panpie",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
-    github: "",
-    live: "",
+      "Multi-page website for pastry shop. lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+    github: "https://github.com/kryptcode/pizza-boys",
+    live: "https://pizza-boys.vercel.app",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src="/linear.webp"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
+      <div className="">
+        <Image fill={true}  className="h-full object-contain w-full" src="https://i.ibb.co/m8tVb5y/Screenshot-2023-12-13-at-21-52-58-Pan-Buddies-Home.png" alt="" />
       </div>
     ),
   },
