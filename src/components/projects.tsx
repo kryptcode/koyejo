@@ -5,14 +5,16 @@ import Image from "next/image";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "QClose Inventory",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "A feature-rich inventory website which combines cutting-edge inventory management, seamless point of sale integration, and convenient in-app chat functionality.",
     github: "https://",
     live: "https:",
+    img: "https://i.ibb.co/PGH3kt2/Screenshot-2023-12-13-at-21-08-57-QClose-Inventory.png",
+    tools: ["https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg", "https://www.svgrepo.com/show/374118/tailwind.svg", "https://www.svgrepo.com/show/353729/fastify-icon.svg"],
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+      <div className="">
+        <Image fill={true}  className="h-full object-contain w-full" src="https://i.ibb.co/PGH3kt2/Screenshot-2023-12-13-at-21-08-57-QClose-Inventory.png" alt="" />
       </div>
     ),
   },
