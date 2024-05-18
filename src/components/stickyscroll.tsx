@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Github, Link as LucideLink } from "lucide-react";
+import Image from "next/image";
 
 export const StickyScroll = ({
   content,
@@ -46,24 +47,46 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = ["#000" ,"#121924", "var(--black)", "var(--neutral-900)"];
+  const backgroundColors = [
+    "#000",
+    // "#121924",
+    // "var(--black)",
+    // "var(--neutral-900)",
+  ];
   const linearGradients = [
     "",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
+    "",
+    "",
   ];
   return (
     <motion.div
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-5"
+      className="h-[30rem] overflow-y-auto scrollbar-thin scrollbar-thumb-white/40 scrollbar-thumb-rounded scrollbar-track-black  flex justify-center relative space-x-10 rounded-md p-5"
       ref={ref}
     >
       <div className="div relative flex items-start justify-between px-4">
         <div className="flex-1">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-32">
+            <div key={item.title + index} className="my-32 first-of-type:my-24">
+              {item.img && (
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 0.3,
+                  }}
+                  className="mb-5 mt-4 pr-6 md:hidden"
+                >
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="h-full w-full object-contain rounded-lg"
+                  />
+                </motion.div>
+              )}
               <motion.h2
                 initial={{
                   opacity: 0,
