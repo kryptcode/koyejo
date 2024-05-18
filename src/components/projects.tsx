@@ -100,7 +100,7 @@ export function Projects() {
         />
       </div>
 
-      <div className="px-2 lg:px-4">
+      <div className="px-2 lg:px-4 font-grotesk">
         <StickyScroll content={content} />
       </div>
 

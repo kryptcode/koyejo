@@ -23,7 +23,7 @@ const Experience = () => {
             />
           </div>
 
-          <div className="h-[75vh] scrollbar-thin scrollbar-thumb-white/40 scrollbar-thumb-rounded scrollbar-track-black px-2 lg:px-4 overflow-y-scroll ">
+          <div className="h-[75vh] scrollbar-thin font-grotesk scrollbar-thumb-white/40 scrollbar-thumb-rounded scrollbar-track-black px-2 lg:px-4 overflow-y-scroll ">
             <div>
               <div
                 className={` my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-7 transition-all bg-morph ease-linear duration-300 group`}

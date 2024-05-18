@@ -69,10 +69,10 @@ export default function Home() {
 
         <div className="  relative w-[90%] lg:w-1/2 ">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-          <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end w-full">
+          <div className="relative shadow-xl bg-black border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end w-full">
             <h4 className="font-inter font-medium text-2xl mb-3">Hi, I'm</h4>
-            <h2 className="font-grotesk text-6xl font-bold mb-7">Koye</h2>
-            <p className="font-medium opacity-70 mb-7">
+            <h2 className="font-grotesk text-6xl font-bold mb-7">Koyejo</h2>
+            <p className="font-medium opacity-70 mb-7 font-grotesk">
               A web developer and software engineer passionate about crafting
               elegant solutions with cutting-edge technology. I strive to
               deliver high-quality, scalable, and user-friendly web applications

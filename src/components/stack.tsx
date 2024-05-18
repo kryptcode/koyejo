@@ -26,7 +26,7 @@ const TechStack = () => {
         />
       </div>
 
-      <div className="h-[75vh] scrollbar-thin scrollbar-thumb-white/40 scrollbar-thumb-rounded scrollbar-track-black px-2 lg:px-4 overflow-y-scroll ">
+      <div className="h-[75vh] scrollbar-thin scrollbar-thumb-white/40 scrollbar-thumb-rounded scrollbar-track-black px-2 lg:px-4 font-grotesk overflow-y-scroll ">
         <div>
         <div className={` flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 transition-all ease-linear duration-300 bg-morph group`}>
               <h2 className={`text-2xl font-grotesk font-semibold flex-1`}>01 - frontend</h2>
