@@ -44,7 +44,7 @@ const Hero = () => {
               className="lg:w-1/2"
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-[1.5] ">
 
           <p className="text-neutral-200 text-lg mb-4 font-medium">
             I'm <b>Koye</b> , a dedicated web developer with a passion for
