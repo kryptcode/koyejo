@@ -87,7 +87,7 @@ const Hero = () => {
             <img
               src="https://i.ibb.co/GtYwVwj/astronaut-svgrepo-com.png"
               alt="astronaut"
-              className="lg:w-1/2"
+              className="w-1/3 lg:w-1/2"
             />
           </div>
           <div className="flex-[1.5] ">
