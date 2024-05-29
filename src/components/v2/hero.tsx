@@ -71,7 +71,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="group w-[90%] min-h-screen pb-24 mx-auto font-grotesk">
+      {/* <div className="group w-[90%] min-h-screen pb-24 mx-auto font-grotesk">
         <div className="flex items-center space-x-3  mb-16 ">
           <h3
             className={`text-[#d1bfa7] text-5xl lg:text-7xl font-bold flex-shrink-0`}
@@ -106,7 +106,7 @@ const Hero = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -23,9 +23,9 @@ export default function Home() {
       <main className="relative bg-black min-h-[200vh] w-full">
         <Navbar />
         <Hero />
+        <Experience />
         <SelProjects />
         <TechStack />
-        <Experience />
       </main>
     </>
   );

@@ -48,8 +48,8 @@ export const StickyScroll = ({
   });
 
   const backgroundColors = [
-    // "#000",
-    "#d1bfa7",
+    "#000",
+    // "#d1bfa7",
     // "#121924",
     // "var(--black)",
     // "var(--neutral-900)",
@@ -95,7 +95,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-semibold font-grotesk text-black"
+                className="text-2xl font-semibold font-grotesk text-[#d1bfa7]"
               >
                 {item.title}
               </motion.h2>
@@ -106,7 +106,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg  text-neutral-800 max-w-sm mt-6"
+                className="text-kg  text-neutral-500 max-w-sm mt-6"
               >
                 {item.description}
               </motion.p>
@@ -123,13 +123,13 @@ export const StickyScroll = ({
                   <div className="flex space-x-4 items-center">
                     <Link
                       href={"/"}
-                      className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-slate-800 border flex items-center justify-center w-16 border-slate-800 text-black"
+                      className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7]"
                     >
                       <Github />
                     </Link>
                     <Link
                       href={"/"}
-                      className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-slate-800 border flex items-center justify-center w-16 border-slate-800 text-black"
+                      className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7]"
                     >
                       <LucideLink />
                     </Link>
@@ -137,7 +137,7 @@ export const StickyScroll = ({
                 ) : (
                   <Link
                     href={item?.live}
-                    className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-slate-800 border flex items-center justify-center w-16 border-slate-800 text-black"
+                    className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7] "
                   >
                     <LucideLink />
                   </Link>
