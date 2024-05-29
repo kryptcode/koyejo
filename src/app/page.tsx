@@ -1,7 +1,7 @@
 "use client";
 import "animate.css";
 import { useActiveStore } from "@/store/activeStore";
-import Experience from "@/components/experience";
+// import Experience from "@/components/experience";
 import { Github, Linkedin, Mail, ScrollText, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Meteors } from "@/components/meteors";
@@ -10,6 +10,7 @@ import Navbar from "@/components/v2/navbar";
 import Hero from "@/components/v2/hero";
 import SelProjects from "@/components/v2/sel-projects";
 import TechStack from "@/components/v2/tech-stack";
+import Experience from "@/components/v2/experience";
 
 export default function Home() {
   const [active, updateActive] = useActiveStore((state) => [
@@ -24,6 +25,7 @@ export default function Home() {
         <Hero />
         <SelProjects />
         <TechStack />
+        <Experience />
       </main>
     </>
   );

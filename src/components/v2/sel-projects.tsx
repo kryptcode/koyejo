@@ -62,13 +62,13 @@ const content = [
   },
   {
     title: "MediVault EMR",
-    description: "EMR",
+    description: " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
     img: "",
     github: "",
     live: "",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] font-grotesk flex items-center justify-center text-white">
-        MediVaultEMR
+        MediVaultEMR(In Production)
       </div>
     ),
   },

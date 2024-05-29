@@ -18,28 +18,32 @@ const slugs = [
   "python",
   "adobeillustrator",
   "thirdweb",
-  "flask",
   "reactquery",
   "reacthookform",
   "recoil",
   "chartdotjs",
+  "vite",
+  "firebase",
+  "appwrite",
+  "vercel",
+  "jest",
+  "git",
+  "github",
+  "visualstudiocode",
+  "figma",
+  "wordpress",
+  "clerk",
+  //   "jira",
+  //   "cypress",
+  //   "docker",
+  // "flask",
 //   "amazonaws",
 //   "postgresql",
-  "firebase",
 //   "nginx",
-  "vercel",
-  "testinglibrary",
-  "jest",
-//   "cypress",
-//   "docker",
-  "git",
-//   "jira",
-  "github",
+  // "testinglibrary",
 //   "gitlab",
-  "visualstudiocode",
 //   "androidstudio",
 //   "sonarqube",
-  "figma",
 ];
 
 const TechStack = () => {
@@ -84,6 +88,7 @@ const TechStack = () => {
                 <div>Framer</div>
                 <div>Wordpress</div>
                 <div>Framer motion</div>
+                <div>Vite</div>
             </div>
         </div>
         <div>
@@ -92,7 +97,8 @@ const TechStack = () => {
                 <div>Node.js</div>
                 <div>Express.js</div>
                 <div>Laravel</div>
-                <div>Flask</div>
+                <div>Prisma</div>
+                {/* <div>Flask</div> */}
             </div>
         </div>
         <div>
@@ -102,7 +108,6 @@ const TechStack = () => {
                 <div>SQL</div>
                 <div>Firebase</div>
                 <div>AppWrite</div>
-                <div>Supabase</div>
             </div>
         </div>
         <div>
@@ -113,6 +118,7 @@ const TechStack = () => {
                 <div>Google Cloud</div>
                 <div>VS Code</div>
                 <div>Postman</div>
+                <div>Thirdweb</div>
             </div>
         </div>
       </div>
