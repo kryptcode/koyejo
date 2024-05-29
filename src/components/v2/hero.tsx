@@ -6,7 +6,7 @@ import { Github, Mail, ScrollText, Twitter } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <div className=" min-h-[60vh] lg:min-h-screen py-16 pb-24 w-[90%] mx-auto font-grotesk ">
+      <div className=" min-h-[85vh] lg:min-h-screen py-16 pb-24 w-[90%] mx-auto font-grotesk ">
         <div className="flex flex-col items-center text-center w-full">
           <h2 className=" text-6xl text-[#d1bfa7] lg:text-[12rem] lg:leading-none font-black mb-4 ">
             Koyejo.
