@@ -29,8 +29,8 @@ const content = [
     title: "LinkStack",
     description:
       "Stack your links in one place.",
-    live: "",
-    github: "https://github.com/kryptcode/linkstack",
+    live: "https://linkstack-ten-sigma.vercel.app",
+    // github: "https://github.com/kryptcode/linkstack",
     img: "https://i.ibb.co/QnpQ3m7/Screenshot-2024-06-08-at-10-22-57-Create-Next-App.png",
     tools: [
       "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
