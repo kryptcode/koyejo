@@ -51,7 +51,6 @@ export const StickyScroll = ({
     "#000",
     // "#d1bfa7",
     "#111",
-    "#222",
     // "var(--black)",
     // "var(--neutral-900)",
   ];

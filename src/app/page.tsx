@@ -11,6 +11,7 @@ import Hero from "@/components/v2/hero";
 import SelProjects from "@/components/v2/sel-projects";
 import TechStack from "@/components/v2/tech-stack";
 import Experience from "@/components/v2/experience";
+import { Footer } from "@/components/v2/footer";
 
 export default function Home() {
   const [active, updateActive] = useActiveStore((state) => [
@@ -26,6 +27,7 @@ export default function Home() {
         <Experience />
         <SelProjects />
         <TechStack />
+        <Footer />
       </main>
     </>
   );

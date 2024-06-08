@@ -6,8 +6,68 @@ import { Github, Mail, ScrollText, Twitter } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <div className=" min-h-[85vh] lg:min-h-screen py-16 pb-24 w-[90%] mx-auto font-grotesk ">
-        <div className="flex flex-col items-center text-center w-full">
+      <div className=" min-h-[90vh] lg:min-h-screen py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
+        <div className="flex items-center space-x-3  mb-10 ">
+          <h3
+            className={`text-[#d1bfa7] text-5xl lg:text-7xl font-bold flex-shrink-0`}
+          >
+            Koyejo.
+          </h3>
+          <div
+            className={`bg-[#d1bfa7] h-[3px] w-0 group-hover:w-full transition-all ease-linear duration-700`}
+          />
+        </div>
+        <div>
+          <div className="text-3xl font-semibold text-neutral-400 ">
+            <Typewriter
+              options={{
+                strings: [
+                  "Front-End Developer",
+                  "Full-Stack Developer",
+                  "React Developer",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
+
+          <div className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-5 space-y-6 lg:space-y-0 mt-6">
+            <Link
+              href="https://twitter.com/koye_vi"
+              target="_blank"
+              className="flex space-x-2 p-2 hover:scale-105 border border-[#d1bfa7] py-1.5 rounded-lg hover:bg-[#d1bfa7] hover:text-black text-[#d1bfa7] font-medium transition-all ease-linear duration-500"
+            >
+              <Twitter />
+              <div className="">@koye_vi</div>
+            </Link>
+            <Link
+              href="mailto:adeyombokehd@gmail.com"
+              target="_blank"
+              className="flex space-x-2 p-2 hover:scale-105 border border-[#d1bfa7] py-1.5 rounded-lg hover:bg-[#d1bfa7] hover:text-black text-[#d1bfa7] font-medium transition-all ease-in-out duration-500"
+            >
+              <Mail />
+              <div className="">adeyombokehd@gmail.com</div>
+            </Link>
+            <Link
+              href="https://github.com/kryptcode"
+              target="_blank"
+              className="flex space-x-2 p-2 hover:scale-105 border border-[#d1bfa7] py-1.5 rounded-lg hover:bg-[#d1bfa7] hover:text-black text-[#d1bfa7] font-medium transition-all ease-linear duration-500"
+            >
+              <Github />
+              <div className=" font-grotesk">@kryptcode</div>
+            </Link>
+            <Link
+              href="https://read.cv/koyejo"
+              target="_blank"
+              className="flex space-x-2 p-2 hover:scale-105 border border-[#d1bfa7] py-1.5 rounded-lg hover:bg-[#d1bfa7] hover:text-black text-[#d1bfa7] font-medium transition-all ease-linear duration-500"
+            >
+              <ScrollText />
+              <div className="">read.cv/koyejo</div>
+            </Link>
+          </div>
+        </div>
+        {/* <div className="flex flex-col items-center text-center w-full">
           <h2 className=" text-6xl text-[#d1bfa7] lg:text-[12rem] lg:leading-none font-black mb-4 ">
             Koyejo.
           </h2>
@@ -68,7 +128,7 @@ const Hero = () => {
               </div>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* <div className="group w-[90%] min-h-screen pb-24 mx-auto font-grotesk">
