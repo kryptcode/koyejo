@@ -69,7 +69,7 @@ const TechStack = () => {
       <div className="grid lg:grid-cols-3 gap-5">
         <div>
             <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Languages</h4>
-            <div className=" font-medium flex space-x-3 flex-wrap">
+            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
                 <div>TypeScript</div>
                 <div>JavaScript</div>
                 <div>PHP</div>
@@ -78,7 +78,7 @@ const TechStack = () => {
         </div>
         <div>
             <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Front End</h4>
-            <div className=" font-medium flex space-x-3 flex-wrap">
+            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
                 <div>React</div>
                 <div>Next.js</div>
                 <div>TailwindCSS</div>
@@ -93,7 +93,7 @@ const TechStack = () => {
         </div>
         <div>
             <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Back End</h4>
-            <div className=" font-medium flex space-x-3 flex-wrap">
+            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
                 <div>Node.js</div>
                 <div>Express.js</div>
                 <div>Laravel</div>
@@ -103,7 +103,7 @@ const TechStack = () => {
         </div>
         <div>
             <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Databases</h4>
-            <div className=" font-medium flex space-x-3 flex-wrap">
+            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
                 <div>MongoDB</div>
                 <div>SQL</div>
                 <div>Firebase</div>
@@ -112,7 +112,7 @@ const TechStack = () => {
         </div>
         <div>
             <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Dev Tools</h4>
-            <div className=" font-medium flex space-x-3 flex-wrap">
+            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
                 <div>Git</div>
                 <div>GitHub</div>
                 <div>Google Cloud</div>
