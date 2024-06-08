@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="relative bg-black min-h-[200vh] w-full">
+      <main className="relative bg-black bg-grid-small-[#d1bfa7]/30 min-h-[200vh] w-full">
         <Navbar />
         <Hero />
         <Experience />
