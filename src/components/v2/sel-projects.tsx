@@ -26,6 +26,29 @@ const content = [
     ),
   },
   {
+    title: "LinkStack",
+    description:
+      "Stack your links in one place.",
+    live: "",
+    github: "https://github.com/kryptcode/linkstack",
+    img: "https://i.ibb.co/QnpQ3m7/Screenshot-2024-06-08-at-10-22-57-Create-Next-App.png",
+    tools: [
+      "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+      "https://www.svgrepo.com/show/374118/tailwind.svg",
+      "https://www.svgrepo.com/show/353729/fastify-icon.svg",
+    ],
+    content: (
+      <div className="">
+        <Image
+          fill={true}
+          className="h-full object-contain w-full"
+          src="https://i.ibb.co/QnpQ3m7/Screenshot-2024-06-08-at-10-22-57-Create-Next-App.png"
+          alt=""
+        />
+      </div>
+    ),
+  },
+  {
     title: "Panpie",
     description:
       "Multi-page website for pastry shop. lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
