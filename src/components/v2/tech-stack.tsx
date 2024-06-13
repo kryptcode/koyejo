@@ -24,15 +24,15 @@ const slugs = [
   "chartdotjs",
   "vite",
   "firebase",
-  "appwrite",
+  // "appwrite",
   "vercel",
   "jest",
   "git",
   "github",
-  "visualstudiocode",
+  // "visualstudiocode",
   "figma",
-  "wordpress",
-  "clerk",
+  // "wordpress",
+  // "clerk",
   //   "jira",
   //   "cypress",
   //   "docker",
@@ -51,13 +51,13 @@ const TechStack = () => {
     <div className="w-[90%] mx-auto font-grotesk group min-h-screen pb-24 ">
       <div className="flex items-center space-x-3  mb-10 ">
         <h3
-          className={`text-[#d1bfa7] text-5xl lg:text-7xl font-bold flex-shrink-0`}
+          className={`text-[#d1bfa7] text-6xl lg:text-9xl font-bold flex-shrink-0`}
         >
           My Stack.
         </h3>
-        <div
+        {/* <div
           className={`bg-[#d1bfa7] h-[3px] w-0 group-hover:w-full transition-all ease-linear duration-700`}
-        />
+        /> */}
       </div>
 
       <div className="w-full">
@@ -66,7 +66,7 @@ const TechStack = () => {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-5">
+      {/* <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
         <div>
             <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Languages</h4>
             <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
@@ -83,11 +83,7 @@ const TechStack = () => {
                 <div>Next.js</div>
                 <div>TailwindCSS</div>
                 <div>HTML & CSS</div>
-                <div>Zustand</div>
-                <div>Recoil</div>
                 <div>Framer</div>
-                <div>Wordpress</div>
-                <div>Framer motion</div>
                 <div>Vite</div>
             </div>
         </div>
@@ -98,7 +94,6 @@ const TechStack = () => {
                 <div>Express.js</div>
                 <div>Laravel</div>
                 <div>Prisma</div>
-                {/* <div>Flask</div> */}
             </div>
         </div>
         <div>
@@ -107,7 +102,6 @@ const TechStack = () => {
                 <div>MongoDB</div>
                 <div>SQL</div>
                 <div>Firebase</div>
-                <div>AppWrite</div>
             </div>
         </div>
         <div>
@@ -115,13 +109,10 @@ const TechStack = () => {
             <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
                 <div>Git</div>
                 <div>GitHub</div>
-                <div>Google Cloud</div>
-                <div>VS Code</div>
-                <div>Postman</div>
                 <div>Thirdweb</div>
             </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

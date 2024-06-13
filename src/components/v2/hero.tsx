@@ -6,19 +6,20 @@ import { Github, Mail, ScrollText, Twitter } from "lucide-react";
 const Hero = () => {
   return (
     <>
-      <div className=" min-h-[90vh] lg:min-h-screen py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
-        <div className="flex items-center space-x-3  mb-10 ">
+      <div className=" min-h-[90vh] lg:min-h-screen flex flex-col justify-end py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
+        <div className="  mb-5 ">
           <h3
-            className={`text-[#d1bfa7] text-5xl lg:text-7xl font-bold flex-shrink-0`}
+            className={`text-[#d1bfa7] text-7xl lg:text-9xl font-bold flex-shrink-0`}
           >
             Koyejo.
           </h3>
-          <div
+          <h6 className="uppercase text-2xl mt-5 font-medium text-gray-300">Software Developer</h6>
+          {/* <div
             className={`bg-[#d1bfa7] h-[3px] w-0 group-hover:w-full transition-all ease-linear duration-700`}
-          />
+          /> */}
         </div>
         <div>
-          <div className="text-3xl font-semibold text-neutral-400 ">
+          {/* <div className="text-3xl font-semibold text-neutral-400 ">
             <Typewriter
               options={{
                 strings: [
@@ -30,9 +31,9 @@ const Hero = () => {
                 loop: true,
               }}
             />
-          </div>
+          </div> */}
 
-          <div className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-5 space-y-6 lg:space-y-0 mt-6">
+          <div className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-5 space-y-6 lg:space-y-0 mt-2">
             <Link
               href="https://twitter.com/koye_vi"
               target="_blank"
