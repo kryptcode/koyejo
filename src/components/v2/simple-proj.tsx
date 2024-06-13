@@ -60,7 +60,7 @@ const content = [
       " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
     img: "",
     github: "",
-    live: "",
+    live: "https://github.com/kryptcode",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] font-grotesk flex items-center justify-center text-white">
         MediVaultEMR(In Production)
@@ -123,12 +123,12 @@ export const SimpleProjects = () => {
           <div className="mb-10">
             <HoverCard>
               <HoverCardTrigger asChild>
-                <div className="mb-2 cursor-pointer">
+                <Link href={item.live} target="_blank" className="mb-2 cursor-pointer">
                   <span className="text-3xl lg:text-6xl font-medium text-gray-500">{`0${
                     index + 1
                   }.`}</span>
                   <span className="text-3xl lg:text-6xl font-bold text-[#d1bfa7]">{item.title}</span>
-                </div>
+                </Link>
               </HoverCardTrigger>
               <HoverCardContent className="w-[20rem] bg-black border-white/20 text-white">
                 <div>
