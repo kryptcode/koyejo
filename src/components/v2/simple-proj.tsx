@@ -107,7 +107,7 @@ const content = [
 export const SimpleProjects = () => {
   return (
     <div className="w-[90%] mx-auto font-grotesk group min-h-screen pb-24 pt-10 ">
-      <div className="flex items-center space-x-3  mb-16 ">
+      <div className="flex items-center space-x-3  mb-5 ">
         <h3
           className={`text-[#d1bfa7] text-6xl lg:text-9xl font-bold flex-shrink-0`}
         >

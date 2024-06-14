@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   return (
     <div className=" min-h-screen group pb-24 w-[90%] mx-auto font-grotesk ">
-      <div className="flex items-center space-x-3  mb-10 ">
+      <div className="flex items-center space-x-3  mb-5 ">
         <h3
           className={`text-[#d1bfa7] text-5xl lg:text-9xl font-bold flex-shrink-0`}
         >

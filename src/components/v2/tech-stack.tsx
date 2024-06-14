@@ -49,7 +49,7 @@ const slugs = [
 const TechStack = () => {
   return (
     <div className="w-[90%] mx-auto font-grotesk group min-h-screen pb-24 ">
-      <div className="flex items-center space-x-3  mb-10 ">
+      <div className="flex items-center space-x-3  mb-5 ">
         <h3
           className={`text-[#d1bfa7] text-6xl lg:text-9xl font-bold flex-shrink-0`}
         >
@@ -66,53 +66,51 @@ const TechStack = () => {
         </div>
       </div>
 
-      {/* <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
         <div>
-            <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Languages</h4>
-            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
+            <h4 className="text-2xl mb-3 font-semibold">Languages</h4>
+            <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
                 <div>TypeScript</div>
                 <div>JavaScript</div>
-                <div>PHP</div>
                 <div>Python</div>
+                <div>PHP</div>
             </div>
         </div>
         <div>
-            <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Front End</h4>
-            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
-                <div>React</div>
-                <div>Next.js</div>
+            <h4 className="text-2xl mb-3 font-semibold">Front End</h4>
+            <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                <div>React & Next</div>
                 <div>TailwindCSS</div>
                 <div>HTML & CSS</div>
-                <div>Framer</div>
                 <div>Vite</div>
             </div>
         </div>
         <div>
-            <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Back End</h4>
-            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
+            <h4 className="text-2xl mb-3 font-semibold">Back End</h4>
+            <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
                 <div>Node.js</div>
                 <div>Express.js</div>
                 <div>Laravel</div>
-                <div>Prisma</div>
             </div>
         </div>
         <div>
-            <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Databases</h4>
-            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
+            <h4 className="text-2xl mb-3 font-semibold">Databases</h4>
+            <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                <div>Prisma</div>
                 <div>MongoDB</div>
                 <div>SQL</div>
                 <div>Firebase</div>
             </div>
         </div>
         <div>
-            <h4 className="text-2xl mb-3 text-[#d1bfa7] font-semibold">Dev Tools</h4>
-            <div className=" font-medium grid md:grid-cols-2 lg:grid-cols-3 gap-1.5 text-lg">
-                <div>Git</div>
-                <div>GitHub</div>
+            <h4 className="text-2xl mb-3 font-semibold">Others</h4>
+            <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                <div>Framer</div>
+                <div>Git & GitHub</div>
                 <div>Thirdweb</div>
             </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

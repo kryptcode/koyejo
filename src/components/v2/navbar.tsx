@@ -12,14 +12,14 @@ const Navbar = () => {
         // },
         {
           name: "Blog",
-          link: "#blog",
+          link: "/blog",
           icon: (
             <NotebookPen className="h-4 w-4 text-neutral-500 dark:text-white" />
           ),
         },
         {
           name: "Archives",
-          link: "#archives",
+          link: "/archives",
           icon: (
             <Archive className="h-4 w-4 text-neutral-500 dark:text-white"  />
           ),
