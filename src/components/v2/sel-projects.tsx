@@ -47,6 +47,25 @@ const content = [
       </div>
     ),
   },
+  {
+    title: "QClose Safety",
+    techs: ["Next.js"],
+    description:
+      "A safety application with incidents reporting, announcements, training and other features.",
+    img: "https://i.ibb.co/BnwNvyN/Screenshot-2024-01-22-at-15-30-42-Dashboard-QClose-Safety.png",
+    github: "",
+    live: "https://qclosesafety.com/",
+    content: (
+      <div className="">
+        <Image
+          fill={true}
+          className="h-full object-contain w-full"
+          src="https://i.ibb.co/BnwNvyN/Screenshot-2024-01-22-at-15-30-42-Dashboard-QClose-Safety.png"
+          alt=""
+        />
+      </div>
+    ),
+  },
   // {
   //   title: "Panpie",
   //   description:
