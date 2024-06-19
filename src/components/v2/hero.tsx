@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <div className=" min-h-[90vh] lg:min-h-screen flex flex-col justify-end py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
-        <div className="  mb-5 ">
+        <div className="  mb-5 animate__animated animate__fadeInUp ">
           <h3
             className={`text-[#d1bfa7] text-7xl lg:text-9xl  font-bold flex-shrink-0`}
           >
