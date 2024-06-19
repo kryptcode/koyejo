@@ -9,8 +9,9 @@ const Hero = () => {
       <div className=" min-h-[90vh] lg:min-h-screen flex flex-col justify-end py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
         <div className="  mb-5 ">
           <h3
-            className={`text-[#d1bfa7] text-7xl lg:text-9xl font-bold flex-shrink-0`}
+            className={`text-[#d1bfa7] text-7xl lg:text-9xl  font-bold flex-shrink-0`}
           >
+            {/* bg-gradient-to-r from-neutral-500 via-[#d1bfa7] to-black bg-clip-text text-transparent */}
             Koyejo.
           </h3>
           <h6 className="uppercase text-2xl mt-5 font-medium text-gray-300">Software Developer</h6>

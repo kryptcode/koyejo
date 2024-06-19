@@ -68,7 +68,7 @@ const TechStack = () => {
 
       <div className="mt-16 ">
         <div
-          className={`border-[#d1bfa7] my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-10 transition-all ease-linear duration-300`}
+          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
           <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
             01 - languages
@@ -82,7 +82,7 @@ const TechStack = () => {
         </div>
 
         <div
-          className={`border-[#d1bfa7] my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-10 transition-all ease-linear duration-300`}
+          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
           <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
             02 - front-end
@@ -100,7 +100,7 @@ const TechStack = () => {
         </div>
 
         <div
-          className={`border-[#d1bfa7] my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-10 transition-all ease-linear duration-300`}
+          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
           <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
             03 - back-end
@@ -116,7 +116,7 @@ const TechStack = () => {
         </div>
 
         <div
-          className={`border-[#d1bfa7] my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-10 transition-all ease-linear duration-300`}
+          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
           <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
             04 - others
