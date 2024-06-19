@@ -38,7 +38,7 @@ const Hero = () => {
             <Link
               href="https://twitter.com/koye_vi"
               target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-light p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
             >
               <Twitter />
               <div className="">@koye_vi</div>
@@ -46,7 +46,7 @@ const Hero = () => {
             <Link
               href="mailto:adeyombokehd@gmail.com"
               target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-light p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-in-out duration-500"
+              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-in-out duration-500"
             >
               <Mail />
               <div className="">adeyombokehd@gmail.com</div>
@@ -54,7 +54,7 @@ const Hero = () => {
             <Link
               href="https://github.com/kryptcode"
               target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-light p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
             >
               <Github />
               <div className=" font-grotesk">@kryptcode</div>
@@ -62,7 +62,7 @@ const Hero = () => {
             <Link
               href="https://read.cv/koyejo"
               target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-light p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
             >
               <ScrollText />
               <div className="">read.cv/koyejo</div>
