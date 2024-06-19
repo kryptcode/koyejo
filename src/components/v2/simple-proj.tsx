@@ -12,6 +12,7 @@ import Link from "next/link";
 const content = [
   {
     title: "QClose Inventory",
+    techs: ["Next.js", "TailwindCSS", "Chart.js", "Zustand"],
     description:
       "A feature-rich inventory website which combines cutting-edge inventory management, seamless point of sale integration, and convenient in-app chat functionality.",
     live: "https://qcloseinventory.com",
@@ -34,6 +35,7 @@ const content = [
   },
   {
     title: "LinkStack",
+    techs: ["Next.js"],
     description: "Stack your links in one place.",
     live: "https://linkstack-ten-sigma.vercel.app",
     // github: "https://github.com/kryptcode/linkstack",
@@ -56,6 +58,7 @@ const content = [
   },
   {
     title: "MediVault EMR",
+    techs: ["Next.js"],
     description:
       " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
     img: "",
@@ -69,6 +72,7 @@ const content = [
   },
   {
     title: "QClose Safety",
+    techs: ["Next.js"],
     description:
       "A safety application with incidents reporting, announcements, training and other features.",
     img: "https://i.ibb.co/BnwNvyN/Screenshot-2024-01-22-at-15-30-42-Dashboard-QClose-Safety.png",
@@ -87,6 +91,7 @@ const content = [
   },
   {
     title: "Kemi Portfolio",
+    techs: ["Next.js"],
     description: "Portfolio of a product manager and content writer.",
     img: "https://i.ibb.co/LhjjcJX/Screenshot-2023-12-29-at-09-22-11-Adekemi.png",
     github: "",
@@ -123,23 +128,36 @@ export const SimpleProjects = () => {
           <div className="mb-10">
             <HoverCard>
               <HoverCardTrigger asChild>
-                <Link href={item.live} target="_blank" className="mb-2 cursor-pointer">
-                  <span className="text-3xl lg:text-6xl font-medium text-gray-500">{`0${
-                    index + 1
-                  }.`}</span>
-                  <span className="text-3xl lg:text-6xl font-bold text-[#d1bfa7]">{item.title}</span>
-                </Link>
+                <div>
+                  <Link
+                    href={item.live}
+                    target="_blank"
+                    className="mb-2 cursor-pointer"
+                  >
+                    <span className="text-3xl lg:text-6xl font-medium text-gray-500">{`0${
+                      index + 1
+                    }.`}</span>
+                    <span className="text-3xl lg:text-6xl font-bold text-[#d1bfa7]">
+                      {item.title}
+                    </span>
+                  </Link>
+                  <div className="text-gray-400 text-xl lg:text-3xl">
+                    {item.description}
+                  </div>
+                </div>
               </HoverCardTrigger>
-              <HoverCardContent className="w-[20rem] bg-black border-white/20 text-white">
+              <HoverCardContent className="w-[27rem] bg-black border-white/20 text-white">
                 <div>
                   <h6 className="mb-3 font-medium   ">{item.title}</h6>
                   <img src={item.img} alt="" />
                   <div className="py-2">
+                    <div className="flex space-x-3 mb-5 text-xs font-semibold">
+                    </div>
                     <div className="flex space-x-4 items-center">
                       {item.github && (
                         <Link
                           href={"/"}
-                          className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7]"
+                          className=" px-5 transition-all ease-linear duration-500 hover:bg-[#d1bfa7] border border-[#d1bfa7]  p-1.5   border-l-[3px] border-b-[3px] rounded-md flex items-center justify-center w-16 hover:text-black text-[#d1bfa7]"
                         >
                           <Github />
                         </Link>
@@ -147,19 +165,17 @@ export const SimpleProjects = () => {
 
                       {item.live && (
                         <Link
-                        href={"/"}
-                        className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7]"
-                      >
-                        <LucideLink />
-                      </Link>
+                          href={"/"}
+                          className=" px-5 transition-all ease-linear duration-500 hover:bg-[#d1bfa7] border border-[#d1bfa7]  p-1.5   border-l-[3px] border-b-[3px] rounded-md flex items-center justify-center w-16 hover:text-black text-[#d1bfa7]"
+                        >
+                          <LucideLink />
+                        </Link>
                       )}
-
                     </div>
                   </div>
                 </div>
               </HoverCardContent>
             </HoverCard>
-            <div className="text-gray-400 text-xl lg:text-3xl">{item.description}</div>
           </div>
         ))}
       </div>
