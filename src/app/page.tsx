@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <main className="relative bg-black bg-grid-small-[#d1bfa7]/30 min-h-[200vh] w-full">
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
 
         <div className="w-[90%] mx-auto font-grotesk py-24 ">

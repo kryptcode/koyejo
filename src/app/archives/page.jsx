@@ -7,7 +7,10 @@ import React, { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: ""
+    title: "Noteit",
+    description: "Note app with AI Chatbot integration",
+    img: "",
+    link: "https://github.com/kryptcode/noteit"
   }
 ]
 
