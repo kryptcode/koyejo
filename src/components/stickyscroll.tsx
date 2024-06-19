@@ -54,16 +54,12 @@ export const StickyScroll = ({
     // "var(--black)",
     // "var(--neutral-900)",
   ];
-  const linearGradients = [
-    "",
-    "",
-    "",
-  ];
+  const linearGradients = ["", "", ""];
   return (
     <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
+      // animate={{
+      //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+      // }}
       className="h-[30rem] overflow-y-auto scrollbar-thin scrollbar-thumb-white/40 scrollbar-thumb-rounded scrollbar-track-black scrollbar-hide  flex justify-center relative space-x-10 rounded-md p-5"
       ref={ref}
     >
@@ -95,7 +91,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-semibold font-grotesk text-[#d1bfa7]"
+                className="text-2xl lg:text-4xl font-semibold font-grotesk text-[#d1bfa7]"
               >
                 {item.title}
               </motion.h2>
@@ -106,7 +102,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg  text-neutral-500 max-w-sm mt-6"
+                className="text-kg lg:text-2xl  text-neutral-500 max-w-sm mt-6"
               >
                 {item.description}
               </motion.p>
@@ -117,27 +113,21 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-5 font-grotesk"
+                className="text-kg flex space-x-5 text-slate-300 max-w-sm mt-5 font-grotesk"
               >
-                {item?.github ? (
-                  <div className="flex space-x-4 items-center">
-                    <Link
-                      href={"/"}
-                      className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7]"
-                    >
-                      <Github />
-                    </Link>
-                    <Link
-                      href={"/"}
-                      className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7]"
-                    >
-                      <LucideLink />
-                    </Link>
-                  </div>
-                ) : (
+                {item.github && (
                   <Link
-                    href={item?.live}
-                    className="p-1 px-5 transition-all ease-linear duration-500 rounded-md hover:bg-[#d1bfa7] border flex items-center justify-center w-16 border-[#d1bfa7] hover:text-black text-[#d1bfa7] "
+                    href={"/"}
+                    className=" px-5 transition-all ease-linear duration-500 hover:bg-[#d1bfa7] border border-[#d1bfa7]  p-1.5   border-l-[3px] border-b-[3px] rounded-md flex items-center justify-center w-16 hover:text-black text-[#d1bfa7]"
+                  >
+                    <Github />
+                  </Link>
+                )}
+
+                {item.live && (
+                  <Link
+                    href={"/"}
+                    className=" px-5 transition-all ease-linear duration-500 hover:bg-[#d1bfa7] border border-[#d1bfa7]  p-1.5   border-l-[3px] border-b-[3px] rounded-md flex items-center justify-center w-16 hover:text-black text-[#d1bfa7]"
                   >
                     <LucideLink />
                   </Link>

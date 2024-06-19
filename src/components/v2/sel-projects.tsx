@@ -27,8 +27,7 @@ const content = [
   },
   {
     title: "LinkStack",
-    description:
-      "Stack your links in one place.",
+    description: "Stack your links in one place.",
     live: "https://linkstack-ten-sigma.vercel.app",
     // github: "https://github.com/kryptcode/linkstack",
     img: "https://i.ibb.co/QnpQ3m7/Screenshot-2024-06-08-at-10-22-57-Create-Next-App.png",
@@ -48,24 +47,24 @@ const content = [
       </div>
     ),
   },
-  {
-    title: "Panpie",
-    description:
-      "Multi-page website for pastry shop. lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
-    img: "https://i.ibb.co/m8tVb5y/Screenshot-2023-12-13-at-21-52-58-Pan-Buddies-Home.png",
-    github: "https://github.com/kryptcode/pizza-boys",
-    live: "https://pizza-boys.vercel.app",
-    content: (
-      <div className="">
-        <Image
-          fill={true}
-          className="h-full object-contain w-full"
-          src="https://i.ibb.co/m8tVb5y/Screenshot-2023-12-13-at-21-52-58-Pan-Buddies-Home.png"
-          alt=""
-        />
-      </div>
-    ),
-  },
+  // {
+  //   title: "Panpie",
+  //   description:
+  //     "Multi-page website for pastry shop. lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor",
+  //   img: "https://i.ibb.co/m8tVb5y/Screenshot-2023-12-13-at-21-52-58-Pan-Buddies-Home.png",
+  //   github: "https://github.com/kryptcode/pizza-boys",
+  //   live: "https://pizza-boys.vercel.app",
+  //   content: (
+  //     <div className="">
+  //       <Image
+  //         fill={true}
+  //         className="h-full object-contain w-full"
+  //         src="https://i.ibb.co/m8tVb5y/Screenshot-2023-12-13-at-21-52-58-Pan-Buddies-Home.png"
+  //         alt=""
+  //       />
+  //     </div>
+  //   ),
+  // },
   {
     title: "Kemi Portfolio",
     description: "Portfolio of a product manager and content writer.",
@@ -85,7 +84,8 @@ const content = [
   },
   {
     title: "MediVault EMR",
-    description: " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
+    description:
+      " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
     img: "",
     github: "",
     live: "",
@@ -102,13 +102,10 @@ const SelProjects = () => {
     <div className="w-[90%] mx-auto font-grotesk group min-h-screen pb-24 ">
       <div className="flex items-center space-x-3  mb-16 ">
         <h3
-          className={`text-[#d1bfa7] text-5xl lg:text-7xl font-bold flex-shrink-0`}
+          className={`text-[#d1bfa7] text-6xl lg:text-9xl font-bold flex-shrink-0`}
         >
-          <span className="hidden md:inline">Selected</span>  Projects.
+          <span className="hidden md:inline">Selected</span> Work.
         </h3>
-        <div
-          className={`bg-[#d1bfa7] h-[3px] w-0 group-hover:w-full transition-all ease-linear duration-700`}
-        />
       </div>
 
       <div className=" font-grotesk">

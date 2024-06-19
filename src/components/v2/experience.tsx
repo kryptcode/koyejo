@@ -5,13 +5,11 @@ const Experience = () => {
   return (
     <div className=" min-h-screen pb-24 w-[90%] mx-auto font-grotesk ">
       <div className="flex items-center space-x-3  mb-5 ">
-        {/* <BoxReveal boxColor={"#d1bfa7"} duration={1}> */}
         <h3
-          className={`text-[#d1bfa7] text-5xlxt-9xl font-bold flex-shrink-0`}
+          className={`text-[#d1bfa7] text-5xl lg:text-9xl font-bold flex-shrink-0`}
         >
           Experience.
         </h3>
-        {/* </BoxReveal> */}
       </div>
 
       <div>

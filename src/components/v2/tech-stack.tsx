@@ -1,5 +1,6 @@
 import React from "react";
 import IconCloud from "@/components/magicui/icon-cloud";
+import BoxReveal from "../magicui/box-reveal";
 
 const slugs = [
   "typescript",
@@ -68,9 +69,11 @@ const TechStack = () => {
 
       <div className="mt-16 ">
         <div
-          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
+          className={`border-neutral-500  flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
-          <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
+          <h2
+            className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}
+          >
             01 - languages
           </h2>
           <div className="grid grid-cols-2 gap-y-3 flex-[2] text-xl lg:text-2xl font-medium">
@@ -81,10 +84,14 @@ const TechStack = () => {
           </div>
         </div>
 
+        <div className="my-5"></div>
+
         <div
-          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
+          className={`border-neutral-500 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
-          <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
+          <h2
+            className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}
+          >
             02 - front-end
           </h2>
           <div className="grid grid-cols-2 gap-y-3 flex-[2] text-xl lg:text-2xl font-medium">
@@ -99,10 +106,14 @@ const TechStack = () => {
           </div>
         </div>
 
+        <div className="my-5"></div>
+
         <div
-          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
+          className={`border-neutral-500 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
-          <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
+          <h2
+            className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}
+          >
             03 - back-end
           </h2>
           <div className="grid grid-cols-2 gap-y-3 flex-[2] text-xl lg:text-2xl font-medium">
@@ -115,10 +126,14 @@ const TechStack = () => {
           </div>
         </div>
 
+        <div className="my-5"></div>
+
         <div
-          className={`border-neutral-500 my-5 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
+          className={`border-neutral-500 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-5 py-8 transition-all ease-linear duration-300`}
         >
-          <h2 className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}>
+          <h2
+            className={`text-[#d1bfa7] text-3xl lg:text-5xl font-semibold flex-1`}
+          >
             04 - others
           </h2>
           <div className="grid grid-cols-2 gap-y-3 flex-[2] text-xl lg:text-2xl font-medium">
@@ -130,8 +145,6 @@ const TechStack = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 };
