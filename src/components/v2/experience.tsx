@@ -13,7 +13,7 @@ const Experience = () => {
       </div>
 
       <div>
-        <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+        <BoxReveal boxColor={"#d1bfa7"} duration={2}>
           <div
             className={`border-neutral-500 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-3 py-6 transition-all ease-linear duration-300 group`}
           >
@@ -38,7 +38,7 @@ const Experience = () => {
         <div className="my-10"></div>
 
 
-        <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+        <BoxReveal boxColor={"#d1bfa7"} duration={2}>
           <div
             className={`border-neutral-500 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-3 py-6 transition-all ease-linear duration-300 group`}
           >
@@ -61,7 +61,7 @@ const Experience = () => {
 
         <div className="my-10"></div>
 
-        <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+        <BoxReveal boxColor={"#d1bfa7"} duration={2}>
           <div
             className={`border-neutral-500 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-3 py-6 transition-all ease-linear duration-300 group`}
           >
@@ -87,7 +87,7 @@ const Experience = () => {
         <div className="my-10"></div>
 
 
-        <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+        <BoxReveal boxColor={"#d1bfa7"} duration={2}>
           <div
             className={`border-neutral-500 flex flex-col md:flex-row gap-10 rounded-xl border-[2.5px]  border-l-[5px] border-b-[5px] p-3 py-6 transition-all ease-linear duration-300 group`}
           >
