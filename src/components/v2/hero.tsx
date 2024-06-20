@@ -2,22 +2,25 @@ import Typewriter from "typewriter-effect";
 import React from "react";
 import Link from "next/link";
 import { Github, Mail, ScrollText, Twitter } from "lucide-react";
+import BoxReveal from "../magicui/box-reveal";
 
 const Hero = () => {
   return (
     <>
-      <div className=" min-h-[90vh] lg:min-h-screen animate__animated animate__fadeInUp flex flex-col justify-end py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
+      <div className=" min-h-[90vh] lg:min-h-screen  flex flex-col justify-end py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
         <div className="  mb-5  ">
-          <h3
-            className={`text-[#d1bfa7] text-7xl lg:text-9xl  font-bold flex-shrink-0`}
-          >
-            {/* bg-gradient-to-r from-neutral-500 via-[#d1bfa7] to-black bg-clip-text text-transparent */}
-            Koyejo.
-          </h3>
-          <h6 className="uppercase text-2xl mt-5 font-medium text-gray-300">Software Developer</h6>
-          {/* <div
-            className={`bg-[#d1bfa7] h-[3px] w-0 group-hover:w-full transition-all ease-linear duration-700`}
-          /> */}
+          <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+            <h3
+              className={`text-[#d1bfa7] text-7xl lg:text-9xl mb-2 font-bold flex-shrink-0`}
+            >
+              Koyejo.
+            </h3>
+          </BoxReveal>
+          <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+            <h6 className="uppercase text-2xl mt-3 font-medium text-gray-300">
+              Software Developer
+            </h6>
+          </BoxReveal>
         </div>
         <div>
           {/* <div className="text-3xl font-semibold text-neutral-400 ">
@@ -33,41 +36,42 @@ const Hero = () => {
               }}
             />
           </div> */}
-
-          <div className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-5 space-y-6 lg:space-y-0 mt-2">
-            <Link
-              href="https://twitter.com/koye_vi"
-              target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
-            >
-              <Twitter />
-              <div className="">@koye_vi</div>
-            </Link>
-            <Link
-              href="mailto:adeyombokehd@gmail.com"
-              target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-in-out duration-500"
-            >
-              <Mail />
-              <div className="">adeyombokehd@gmail.com</div>
-            </Link>
-            <Link
-              href="https://github.com/kryptcode"
-              target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
-            >
-              <Github />
-              <div className=" font-grotesk">@kryptcode</div>
-            </Link>
-            <Link
-              href="https://read.cv/koyejo"
-              target="_blank"
-              className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
-            >
-              <ScrollText />
-              <div className="">read.cv/koyejo</div>
-            </Link>
-          </div>
+          <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+            <div className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-5 space-y-6 lg:space-y-0 mt-2">
+              <Link
+                href="https://twitter.com/koye_vi"
+                target="_blank"
+                className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+              >
+                <Twitter />
+                <div className="">@koye_vi</div>
+              </Link>
+              <Link
+                href="mailto:adeyombokehd@gmail.com"
+                target="_blank"
+                className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-in-out duration-500"
+              >
+                <Mail />
+                <div className="">adeyombokehd@gmail.com</div>
+              </Link>
+              <Link
+                href="https://github.com/kryptcode"
+                target="_blank"
+                className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+              >
+                <Github />
+                <div className=" font-grotesk">@kryptcode</div>
+              </Link>
+              <Link
+                href="https://read.cv/koyejo"
+                target="_blank"
+                className="flex space-x-2 hover:-translate-y-1.5 border border-[#d1bfa7] font-medium p-1.5 px-3  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+              >
+                <ScrollText />
+                <div className="">read.cv/koyejo</div>
+              </Link>
+            </div>
+          </BoxReveal>
         </div>
         {/* <div className="flex flex-col items-center text-center w-full">
           <h2 className=" text-6xl text-[#d1bfa7] lg:text-[12rem] lg:leading-none font-black mb-4 ">

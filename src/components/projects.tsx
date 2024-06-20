@@ -87,7 +87,7 @@ export function Projects() {
     <div
       className={`${
         active === "projects" ? "block" : "hidden"
-      } animate__animated animate__slideInUp h-full absolute bg-black text-white z-10 p-5 lg:p-16 top-0 left-0 right-0 bottom-0 `}
+      }  h-full absolute bg-black text-white z-10 p-5 lg:p-16 top-0 left-0 right-0 bottom-0 `}
     >
       <div className="flex justify-between items-center">
         <h2 className="font-grotesk font-semibold text-4xl lg:text-5xl uppercase mb-7">

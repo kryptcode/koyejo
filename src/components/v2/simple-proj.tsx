@@ -125,7 +125,7 @@ export const SimpleProjects = () => {
 
       <div className="">
         {content.map((item, index) => (
-          <div className="mb-10 animate__animated animate__fadeInLeft">
+          <div className="mb-10 ">
             <HoverCard>
               <HoverCardTrigger asChild>
                 <div>
