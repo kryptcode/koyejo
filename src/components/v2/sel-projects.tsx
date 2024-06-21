@@ -30,7 +30,7 @@ const content = [
     description: "Stack your links in one place.",
     live: "https://linkstack-ten-sigma.vercel.app",
     // github: "https://github.com/kryptcode/linkstack",
-    img: "https://i.ibb.co/QnpQ3m7/Screenshot-2024-06-08-at-10-22-57-Create-Next-App.png",
+    img: "https://i.ibb.co/hBJC2dN/Screenshot-2024-06-21-at-10-39-47-Link-Stack.png",
     tools: [
       "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
       "https://www.svgrepo.com/show/374118/tailwind.svg",
@@ -41,7 +41,7 @@ const content = [
         <Image
           fill={true}
           className="h-full object-contain w-full"
-          src="https://i.ibb.co/QnpQ3m7/Screenshot-2024-06-08-at-10-22-57-Create-Next-App.png"
+          src="https://i.ibb.co/hBJC2dN/Screenshot-2024-06-21-at-10-39-47-Link-Stack.png"
           alt=""
         />
       </div>
