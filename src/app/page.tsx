@@ -9,6 +9,7 @@ import { Footer } from "@/components/v2/footer";
 import { SimpleProjects } from "@/components/v2/simple-proj";
 import TextRevealByWord from "@/components/magicui/text-reveal";
 import SelProjects from "@/components/v2/sel-projects";
+import Navbar from "@/components/v2/navbar";
 
 const words = "I\'m a web developer with a passion for crafting digital experiences that stand out. Over the years, I\'ve had the privilege of working on a diverse range of projects, each contributing to my growth and expertise."
 
@@ -21,7 +22,7 @@ export default function Home() {
   return (
     <>
       <main className="relative bg-black bg-grid-small-[#d1bfa7]/30 min-h-[200vh] max-w-[1440px] w-full">
-        {/* <Navbar /> */}
+        <Navbar />
         <Hero />
 
         <div className="w-[90%] mx-auto text-4xl lg:text-5xl font-medium text-gray-500 font-grotesk py-24 ">
