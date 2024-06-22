@@ -1,6 +1,7 @@
 import React from "react";
 import { StickyScroll } from "../stickyscroll";
 import Image from "next/image";
+import Link from "next/link";
 
 const content = [
   {
@@ -129,6 +130,10 @@ const SelProjects = () => {
 
       <div className=" font-grotesk">
         <StickyScroll content={content} />
+      </div>
+
+      <div className="pt-10 ">
+        <Link href="/archives" className="border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500 inline-block hover:text-black hover:bg-[#d1bfa7]">View Archives</Link>
       </div>
     </div>
   );
