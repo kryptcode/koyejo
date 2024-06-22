@@ -1,6 +1,11 @@
 "use client";
 import Navbar from "@/components/v2/navbar";
-import { FolderIcon, SquareArrowOutUpRight } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  FolderIcon,
+  SquareArrowOutUpRight,
+} from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -108,13 +113,79 @@ const projects = [
     link: "https://airbnb-clone-zeta-nine.vercel.app/",
     techs: ["Next.js", "React-Map-GL", "GeoLib"],
   },
+  {
+    id: 11,
+    title: "Kemi Portfolio",
+    description: "Portfolio of a product manager and content writer.",
+    img: "https://i.ibb.co/LhjjcJX/Screenshot-2023-12-29-at-09-22-11-Adekemi.png",
+    link: "https://kemi-zeta.vercel.app",
+    techs: ["Next.js", "TailwindCSS"],
+  },
+  {
+    id: 12,
+    title: "Ọ̀rẹ́ Ọkàn",
+    description:
+      "A chatbot designed to address mental health issues and provide support in Yoruba.",
+    img: "https://i.ibb.co/K5kYdqx/Screenshot-2024-06-15-at-20-44-04-Mental-Wellness-Bot.png",
+    link: "https://github.com/kryptcode/mchl-yor-chatbot",
+    techs: ["Next.js", "Express", "Python", "Jupyter Notebook"],
+  },
+];
+
+const content = [
+  {
+    id: 31,
+    title: "QClose Inventory",
+    description:
+      "A feature-rich inventory website which combines cutting-edge inventory management, seamless point of sale integration, and convenient in-app chat functionality.",
+    live: "https://qcloseinventory.com",
+    img: "https://i.ibb.co/PGH3kt2/Screenshot-2023-12-13-at-21-08-57-QClose-Inventory.png",
+    tools: [
+      "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg",
+      "https://www.svgrepo.com/show/374118/tailwind.svg",
+      "https://www.svgrepo.com/show/353729/fastify-icon.svg",
+    ],
+  },
+  {
+    id: 32,
+    title: "LinkStack",
+    description: "Stack your links in one place.",
+    live: "https://linkstack-ten-sigma.vercel.app",
+    // github: "https://github.com/kryptcode/linkstack",
+    img: "https://i.ibb.co/hBJC2dN/Screenshot-2024-06-21-at-10-39-47-Link-Stack.png",
+    tools: ["Next.js", "TailwindCSS", "Express", "MongoDB", "Zustand"],
+    techs: ["Next.js", "TailwindCSS", "Express", "MongoDB", "Zustand"],
+  },
+  {
+    id: 33,
+    title: "QClose Safety",
+    techs: ["Next.js"],
+    description:
+      "A safety application with incidents reporting, announcements, training and other features.",
+    img: "https://i.ibb.co/BnwNvyN/Screenshot-2024-01-22-at-15-30-42-Dashboard-QClose-Safety.png",
+    github: "",
+    live: "https://qclosesafety.com/",
+  },
+  {
+    id: 34,
+    title: "MediVault EMR",
+    description:
+      " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
+    img: "",
+    github: "",
+    live: "",
+  },
 ];
 
 const Page = () => {
   const [folder, setFolder] = useState("/");
 
   function containsNumber(str) {
-    return !isNaN(parseFloat(str)) && isFinite(str);
+    return !isNaN(parseFloat(str)) && parseFloat(str) < 30;
+  }
+
+  function forProjects(str) {
+    return !isNaN(parseFloat(str)) && parseFloat(str) > 30 < 50;
   }
 
   return (
@@ -167,14 +238,6 @@ const Page = () => {
                     <span>/side-projects</span>
                   </div>
                 </div>
-                {/* <div className="my-3" onClick={() => setFolder("/portfolio")}>
-                  <div
-                    className={`flex group text-neutral-300 cursor-pointer justify-between w-full`}
-                  >
-                    <span className="group-hover:underline">Portfolio</span>
-                    <span>/portfolio</span>
-                  </div>
-                </div> */}
                 <div
                   className="my-3"
                   onClick={() => setFolder("/framer-projects")}
@@ -208,6 +271,7 @@ const Page = () => {
 
           <div className="lg:flex-[3] xl:flex-[3.8] lg:h-[90vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black ">
             {folder === "/" ? (
+              // Main archive view
               <div className="grid grid-cols-3 lg:grid-cols-5 p-3 ">
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
@@ -225,13 +289,14 @@ const Page = () => {
                 </div>
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
-                  onClick={() => setFolder("/side-projects")}
+                  onClick={() => setFolder("/framer-projects")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24" />
                   <span className="text-neutral-400 pl-2">Framer Projects</span>
                 </div>
               </div>
             ) : folder == "/side-projects" ? (
+              // View when you click on  side-project folder
               <div className="grid grid-cols-3 lg:grid-cols-4 p-3 ">
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
@@ -253,46 +318,211 @@ const Page = () => {
                   </div>
                 ))}
               </div>
+            ) : folder == "/projects" ? (
+              // View when you click on projects folder
+              <div className="grid grid-cols-3 lg:grid-cols-4 p-3 ">
+                <div
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  onClick={() => setFolder("/")}
+                >
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
+                  <span className="text-neutral-400 pl-2">..</span>
+                </div>
+                {content.map((project, index) => (
+                  <div
+                    key={index}
+                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                    onClick={() => setFolder(project.id)}
+                  >
+                    <img src="icons8-folder.png" alt="" className="w-24 h-24" />
+                    <span className="text-neutral-400 pl-2">
+                      {project.title}
+                    </span>
+                  </div>
+                ))}
+              </div>
             ) : containsNumber(folder) ? (
+              // View when you click on any of the side-projects
               <div className="p-4 ">
                 <div className=" flex mb-4 lg:mb-8 space-x-1.5 items-end">
-                  <span className="cursor-pointer hover:opacity-80 underline" onClick={() => setFolder("/")}>Archive</span>  <span className="cursor-pointer underline hover:opacity-80" onClick={() => setFolder("/side-projects")}>/ Side Projects</span>  <span className="text-neutral-500">/ {projects[folder].title} </span>
+                  <span
+                    className="cursor-pointer hover:opacity-80 underline"
+                    onClick={() => setFolder("/")}
+                  >
+                    Archive
+                  </span>{" "}
+                  <span
+                    className="cursor-pointer underline hover:opacity-80"
+                    onClick={() => setFolder("/side-projects")}
+                  >
+                    / Side Projects
+                  </span>{" "}
+                  <span className="text-neutral-500">
+                    / {projects[folder].title}{" "}
+                  </span>
                 </div>
 
                 <div className="pt-3">
                   <div className="mb-6">
                     <div className="mb-4">
-                      <img className="rounded-lg" src={projects[folder].img} alt="" />
+                      <img
+                        className="rounded-lg max-w-[600px] w-full"
+                        src={projects[folder].img}
+                        alt=""
+                      />
                     </div>
-                    <h2 h2 className="text-[#d1bfa7] text-3xl mb-4 lg:text-5xl font-medium">{projects[folder].title}</h2>
+                    <h2
+                      h2
+                      className="text-[#d1bfa7] text-3xl mb-4 lg:text-5xl font-medium"
+                    >
+                      {projects[folder].title}
+                    </h2>
                   </div>
 
                   <div>
-                    <div className="flex space-x-5 mb-4">
-                      {
-                        projects[folder].techs.map((tech, index) => (
-                          <div key={index} className=" border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500">{tech}</div>
-                        ))
-                      }
+                    <div className="flex justify-start flex-wrap gap-3 mb-4">
+                      {projects[folder].techs.map((tech, index) => (
+                        <div
+                          key={index}
+                          className=" border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                        >
+                          {tech}
+                        </div>
+                      ))}
                     </div>
 
                     <div className="mb-5">
-                      <h6 className="text-xl font-medium mb-1 text-neutral-300">Description:</h6>
+                      <h6 className="text-xl font-medium mb-1 text-neutral-300">
+                        Description:
+                      </h6>
                       <p className="text-lg lg:w-1/2 text-neutral-400 ">
                         {projects[folder].description}
                       </p>
                     </div>
                     <div className="w-52 ">
-                      <Link href={projects[folder].link} target="_blank" className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500">
-                        <SquareArrowOutUpRight size={18} /> <span>Go To Project</span>
+                      <Link
+                        href={projects[folder].link}
+                        target="_blank"
+                        className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                      >
+                        <SquareArrowOutUpRight size={18} />{" "}
+                        <span>Go To Project</span>
                       </Link>
                     </div>
+                    <div className="flex justify-end">
+                      <div className="mt-5 py-5 pb-10 flex justify-between gap-5 flex-wrap lg:w-[45%] ">
+                        <button className={`${folder == 0 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder > 0 && setFolder(folder - 1)}>
+                          <ArrowLeft size={18} />
+                          <span>Previous Project</span>
+                        </button>
+
+                        <button className={`${folder == projects.length - 1 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder < projects.length - 1 && setFolder(folder + 1)} >
+                          <ArrowRight size={18} />
+                          <span>Next Project</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : forProjects(folder) ? (
+              // View when you click on any of the projects
+              <div className="p-4 ">
+                <div className=" flex mb-4 lg:mb-8 space-x-1.5 items-end">
+                  <span
+                    className="cursor-pointer hover:opacity-80 underline"
+                    onClick={() => setFolder("/")}
+                  >
+                    Archive
+                  </span>{" "}
+                  <span
+                    className="cursor-pointer underline hover:opacity-80"
+                    onClick={() => setFolder("/projects")}
+                  >
+                    / Projects
+                  </span>{" "}
+                  <span className="text-neutral-500">
+                    / {content[folder - 31].title}{" "}
+                  </span>
+                </div>
+
+                <div className="pt-3">
+                  <div className="mb-6">
+                    <div className="mb-4">
+                      <img
+                        className="rounded-lg max-w-[600px] w-full object-contain "
+                        src={content[folder - 31].img}
+                        alt=""
+                      />
+                    </div>
+                    <h2
+                      h2
+                      className="text-[#d1bfa7] text-3xl mb-4 lg:text-5xl font-medium"
+                    >
+                      {content[folder - 31].title}
+                    </h2>
                   </div>
 
+                  <div>
+                    <div className="flex justify-start flex-wrap gap-3 mb-4">
+                      {content[folder - 31].techs?.map((tech, index) => (
+                        <div
+                          key={index}
+                          className=" border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                        >
+                          {tech}
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="mb-5">
+                      <h6 className="text-xl font-medium mb-1 text-neutral-300">
+                        Description:
+                      </h6>
+                      <p className="text-lg lg:w-1/2 text-neutral-400 ">
+                        {content[folder - 31].description}
+                      </p>
+                    </div>
+                    <div className="w-52 ">
+                      <Link
+                        href={
+                          content[folder - 31].github ||
+                          content[folder - 31].live ||
+                          ""
+                        }
+                        target="_blank"
+                        className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                      >
+                        <SquareArrowOutUpRight size={18} />{" "}
+                        <span>Go To Project</span>
+                      </Link>
+                    </div>
+                    <div className="flex justify-end">
+                      <div className="mt-5 py-5 pb-10 flex justify-between gap-5 flex-wrap lg:w-[45%] ">
+                        <button className={`${folder == 31 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder > 31 && setFolder(folder - 1)}>
+                          <ArrowLeft size={18} />
+                          <span>Previous Project</span>
+                        </button>
+
+                        <button className={`${folder == content.length + 30 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder < content.length + 30 && setFolder(folder + 1)} >
+                          <ArrowRight size={18} />
+                          <span>Next Project</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             ) : (
-              "Dir Not Found"
+              <div className="text-center text-neutral-500">
+                <div>Dir Not Available</div>
+                <div>
+                  Go back to{" "}
+                  <span onClick={() => setFolder("/")} className="underline">
+                    Archive
+                  </span>
+                </div>
+              </div>
             )}
           </div>
         </div>
