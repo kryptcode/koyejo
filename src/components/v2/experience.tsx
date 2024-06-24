@@ -20,12 +20,12 @@ const Experience = () => {
             <span>March 2021 - February 2022</span>
           </div>
           <div className="flex-[2.5] ">
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <h4 className={`text-[#d1bfa7]  text-3xl font-semibold mb-4`}>
                 Front-End Developer . Freelance
               </h4>
             </BoxReveal>
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <div className="text-xl font-medium text-neutral-500">
                 Collaborated with clients to understand project goals, designed
                 and developed custom websites and web applications using React
@@ -45,12 +45,12 @@ const Experience = () => {
             <span>March 2022 - October 2022</span>
           </div>
           <div className="flex-[2.5] ">
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <h4 className={`text-[#d1bfa7]  text-3xl font-semibold mb-4`}>
                 Front-End Developer . Zeta Tech
               </h4>
             </BoxReveal>
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <div className="text-xl font-medium text-neutral-500">
                 Assisted in developing web applications, optimized website
                 performance and responsiveness, collaborated with developers to
@@ -70,12 +70,12 @@ const Experience = () => {
             <span>May 2023 - March 2024</span>
           </div>
           <div className="flex-[2.5] ">
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <h4 className={`text-[#d1bfa7]  text-3xl font-semibold mb-4`}>
                 Software Developer . QClose
               </h4>
             </BoxReveal>
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <div className="text-xl font-medium text-neutral-500">
                 Collaborated with UX/UI designers to translate wireframes into
                 interactive web interfaces, implemented cross-browser
@@ -97,12 +97,12 @@ const Experience = () => {
             <span>November 2022 - Present</span>
           </div>
           <div className="flex-[2.5] ">
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <h4 className={`text-[#d1bfa7]  text-3xl font-semibold mb-4`}>
                 Full Stack Developer . Freelance
               </h4>
             </BoxReveal>
-            <BoxReveal boxColor={"#d1bfa7"} duration={1.1}>
+            <BoxReveal boxColor={"#222"} duration={1.1}>
               <div className="text-xl font-medium text-neutral-500">
                 Collaborated with clients to understand project goals, designed
                 and developed custom websites and web applications using React,

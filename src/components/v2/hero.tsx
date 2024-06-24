@@ -9,14 +9,14 @@ const Hero = () => {
     <>
       <div className=" min-h-[90vh] lg:min-h-screen  flex flex-col justify-end py-16 pb-24 group w-[90%] mx-auto font-grotesk ">
         <div className="  mb-5  ">
-          <BoxReveal boxColor={"#d1bfa7"} duration={1}>
+          <BoxReveal boxColor={"#222"} duration={0.5}>
             <h3
               className={`text-[#d1bfa7] text-7xl lg:text-9xl mb-2 font-bold flex-shrink-0`}
             >
               Koyejo.
             </h3>
           </BoxReveal>
-          <BoxReveal boxColor={"#d1bfa7"} duration={1.2}>
+          <BoxReveal boxColor={"#222"} duration={0.5}>
             <h6 className="uppercase text-2xl mt-3 font-medium text-gray-300">
               Software Developer
             </h6>
@@ -36,7 +36,7 @@ const Hero = () => {
               }}
             />
           </div> */}
-          <BoxReveal boxColor={"#d1bfa7"} duration={1.4}>
+          <BoxReveal boxColor={"#222"} duration={1}>
             <div className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-5 space-y-6 lg:space-y-0 mt-2">
               <Link
                 href="https://twitter.com/koye_vi"
