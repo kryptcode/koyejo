@@ -130,6 +130,38 @@ const projects = [
     link: "https://github.com/kryptcode/mchl-yor-chatbot",
     techs: ["Next.js", "Express", "Python", "Jupyter Notebook"],
   },
+  {
+    id: 13,
+    title: "Hulu ish",
+    description: "Hulu home page built with nextjs and tmdb api.",
+    img: "https://i.ibb.co/8Yd3TM9/Screenshot-2023-12-13-at-21-13-53-Hulu-Clone.png",
+    link: "http://hulu-clone-rose-nine.vercel.app/",
+    techs: ["Next.js", "TMDb", "TailwindCSS"],
+  },
+  {
+    id: 14,
+    title: "Gymate",
+    description: "Multipage website for a gym.",
+    img: "https://i.ibb.co/F76m2wq/Screenshot-2024-06-24-at-09-06-08-Gymate.png",
+    link: "https://gymate-inky.vercel.app/",
+    techs: ["React", "Vite", "TailwindCSS", "Recoil"],
+  },
+  {
+    id: 15,
+    title: "CarHub",
+    description: "Car rentals website.",
+    img: "https://i.ibb.co/3B63rym/Screenshot-2024-06-24-at-09-01-10-Car-Hub.png",
+    link: "https://carhub-sage.vercel.app/",
+    techs: ["Next.js", "TypeScript", "TailwindCSS"],
+  },
+  {
+    id: 16,
+    title: "c-rentals",
+    description: "Car rentals website.",
+    img: "https://i.ibb.co/YhRRbD1/Screenshot-2024-06-24-at-09-02-48-CRentals.png",
+    link: "https://c-rentals.vercel.app/",
+    techs: ["React", "Vite", "recoil", "aos"],
+  },
 ];
 
 const content = [
@@ -405,18 +437,34 @@ const Page = () => {
                         target="_blank"
                         className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
                       >
-                        <SquareArrowOutUpRight size={18} />{" "}
-                        <span>Go To Project</span>
+                        <SquareArrowOutUpRight size={18} /> <span>Link</span>
                       </Link>
                     </div>
                     <div className="flex justify-end">
                       <div className="mt-5 py-5 pb-10 flex justify-between gap-5 flex-wrap lg:w-[45%] ">
-                        <button className={`${folder == 0 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder > 0 && setFolder(folder - 1)}>
+                        <button
+                          className={`${
+                            folder == 0
+                              ? "cursor-not-allowed opacity-70"
+                              : "hover:bg-[#d1bfa7] hover:text-black"
+                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                          onClick={() => folder > 0 && setFolder(folder - 1)}
+                        >
                           <ArrowLeft size={18} />
                           <span>Previous Project</span>
                         </button>
 
-                        <button className={`${folder == projects.length - 1 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder < projects.length - 1 && setFolder(folder + 1)} >
+                        <button
+                          className={`${
+                            folder == projects.length - 1
+                              ? "cursor-not-allowed opacity-70"
+                              : "hover:bg-[#d1bfa7] hover:text-black"
+                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                          onClick={() =>
+                            folder < projects.length - 1 &&
+                            setFolder(folder + 1)
+                          }
+                        >
                           <ArrowRight size={18} />
                           <span>Next Project</span>
                         </button>
@@ -494,17 +542,40 @@ const Page = () => {
                         className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
                       >
                         <SquareArrowOutUpRight size={18} />{" "}
-                        <span>Go To Project</span>
+                        <span>
+                          {content[folder - 31].github
+                            ? "View Repo"
+                            : content[folder - 31].live
+                            ? "Live Link"
+                            : "Go To Project"}
+                        </span>
                       </Link>
                     </div>
                     <div className="flex justify-end">
                       <div className="mt-5 py-5 pb-10 flex justify-between gap-5 flex-wrap lg:w-[45%] ">
-                        <button className={`${folder == 31 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder > 31 && setFolder(folder - 1)}>
+                        <button
+                          className={`${
+                            folder == 31
+                              ? "cursor-not-allowed opacity-70"
+                              : "hover:bg-[#d1bfa7] hover:text-black"
+                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                          onClick={() => folder > 31 && setFolder(folder - 1)}
+                        >
                           <ArrowLeft size={18} />
                           <span>Previous Project</span>
                         </button>
 
-                        <button className={`${folder == content.length + 30 ? "cursor-not-allowed opacity-70" : "hover:bg-[#d1bfa7] hover:text-black"}  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`} onClick={() => folder < content.length + 30 && setFolder(folder + 1)} >
+                        <button
+                          className={`${
+                            folder == content.length + 30
+                              ? "cursor-not-allowed opacity-70"
+                              : "hover:bg-[#d1bfa7] hover:text-black"
+                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                          onClick={() =>
+                            folder < content.length + 30 &&
+                            setFolder(folder + 1)
+                          }
+                        >
                           <ArrowRight size={18} />
                           <span>Next Project</span>
                         </button>

@@ -37,7 +37,7 @@ const Hero = () => {
             />
           </div> */}
           <BoxReveal boxColor={"#222"} duration={1}>
-            <div className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-5 space-y-6 lg:space-y-0 mt-2">
+            <div className="flex lg:items-center flex-wrap gap-3 mt-2">
               <Link
                 href="https://twitter.com/koye_vi"
                 target="_blank"
