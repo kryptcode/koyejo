@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "@/components/v2/navbar";
 import { useArchiveStore } from "@/store/activeStore";
 import {
   ArrowLeft,
@@ -10,6 +9,52 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import IconCloud from "@/components/magicui/icon-cloud";
+
+const slugs = [
+  "typescript",
+  "javascript",
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "mongodb",
+  "php",
+  "laravel",
+  "tailwindcss",
+  "python",
+  "adobeillustrator",
+  "thirdweb",
+  "reactquery",
+  "reacthookform",
+  "recoil",
+  "chartdotjs",
+  "vite",
+  "firebase",
+  // "appwrite",
+  "vercel",
+  "jest",
+  "git",
+  "github",
+  // "visualstudiocode",
+  "figma",
+  // "wordpress",
+  // "clerk",
+  //   "jira",
+  //   "cypress",
+  //   "docker",
+  // "flask",
+  //   "amazonaws",
+  //   "postgresql",
+  //   "nginx",
+  // "testinglibrary",
+  //   "gitlab",
+  //   "androidstudio",
+  //   "sonarqube",
+];
 
 const projects = [
   {
@@ -214,7 +259,10 @@ const content = [
 const Page = () => {
   // const [folder, setFolder] = useState("/");
 
-  const [folder, setFolder] = useArchiveStore(state => [state.value, state.setValue])
+  const [folder, setFolder] = useArchiveStore((state) => [
+    state.value,
+    state.setValue,
+  ]);
 
   function containsNumber(str) {
     return !isNaN(parseFloat(str)) && parseFloat(str) < 30;
@@ -226,7 +274,6 @@ const Page = () => {
 
   return (
     <div className="relative bg-black flex flex-col bg-grid-small-[#d1bfa7]/30 font-grotesk min-h-[100vh] w-full">
-      <Navbar />
 
       {/* <div className="border-b border-[#d1bfa7]/50 h-[10vh] flex justify-center items-center ">
         <div className="text-3xl font-bold text-[#d1bfa7] w-[90%] mx-auto  ">
@@ -237,16 +284,21 @@ const Page = () => {
       <div className=" flex-grow">
         <div className=" flex items-start mx-auto h-full">
           <div className="flex-1 bg-black border-r border-[#d1bfa7]/50 p-4 min-h-[100vh] hidden lg:block">
-            <h5 className="text-3xl font-semibold text-[#d1bfa7]">Koye&apos;s Archive</h5>
+            <h5 className="text-3xl font-semibold text-[#d1bfa7]">
+              Koye&apos;s Archive
+            </h5>
             <div className="pt-16">
               <div className="mb-5">
-                <div
+                <Link
+                  href={"/"}
                   className="group text-neutral-400 flex items-center space-x-1 cursor-pointer w-full"
                   onClick={() => setFolder("/")}
                 >
                   <CornerUpLeft size={20} />
-                  <span className="group-hover:underline pl-2">Back to Homepage</span>
-                </div>
+                  <span className="group-hover:underline pl-2">
+                    Back to Homepage
+                  </span>
+                </Link>
               </div>
               <div>
                 <div
@@ -300,20 +352,13 @@ const Page = () => {
                     <span>/framer-projects</span>
                   </div>
                 </div>
-                <div
-                  className="my-3"
-                  onClick={() => setFolder("/my-stack")}
-                >
+                <div className="my-3" onClick={() => setFolder("/my-stack")}>
                   <div
                     className={`${
-                      folder === "/framer-projects"
-                        ? "text-white"
-                        : "text-neutral-300"
+                      folder === "/my-stack" ? "text-white" : "text-neutral-300"
                     } flex group cursor-pointer justify-between w-full`}
                   >
-                    <span className="group-hover:underline">
-                      Stack
-                    </span>
+                    <span className="group-hover:underline">Stack</span>
                     <span>/stack</span>
                   </div>
                 </div>
@@ -331,7 +376,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="lg:flex-[3] xl:flex-[3] lg:h-[100vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black ">
+          <div className="lg:flex-[3] xl:flex-[3] lg:h-[100vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black p-5 ">
             {folder === "/" ? (
               // Main archive view
               <div className="grid grid-cols-3 lg:grid-cols-5 p-3 ">
@@ -341,7 +386,9 @@ const Page = () => {
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-8"><CornerUpLeft size={16} /></span>
+                  <span className="text-neutral-400 pl-8">
+                    <CornerUpLeft size={16} />
+                  </span>
                 </Link>
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
@@ -363,6 +410,13 @@ const Page = () => {
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24" />
                   <span className="text-neutral-400 pl-2">Framer Projects</span>
+                </div>
+                <div
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  onClick={() => setFolder("/my-stack")}
+                >
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
+                  <span className="text-neutral-400 pl-2">Stack</span>
                 </div>
               </div>
             ) : folder == "/side-projects" ? (
@@ -475,7 +529,8 @@ const Page = () => {
                         target="_blank"
                         className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
                       >
-                        <SquareArrowOutUpRight size={18} /> <span>View Site</span>
+                        <SquareArrowOutUpRight size={18} />{" "}
+                        <span>View Site</span>
                       </Link>
                     </div>
                     <div className="flex justify-end">
@@ -618,6 +673,67 @@ const Page = () => {
                           <span>Next Project</span>
                         </button>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : folder === "/my-stack" ? (
+              <div>
+                <h6 className="underline cursor-pointer text-lg text-neutral-500 mb-4" onClick={() => setFolder('/')}>
+                  ../archive
+                </h6>
+                <h5 className="text-2xl font-medium text-[#d1bfa7]">
+                  My Tech Stack
+                </h5>
+                <div>
+                  <div className="w-full">
+                    <div className="relative flex h-full mx-auto max-w-[45rem] items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-4 ">
+                      <IconCloud iconSlugs={slugs} />
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
+                  <div>
+                    <h4 className="text-2xl mb-3 font-semibold">Languages</h4>
+                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                      <div>TypeScript</div>
+                      <div>JavaScript</div>
+                      <div>Python</div>
+                      <div>PHP</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-2xl mb-3 font-semibold">Front End</h4>
+                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                      <div>React & Next</div>
+                      <div>TailwindCSS</div>
+                      <div>HTML & CSS</div>
+                      <div>Vite</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-2xl mb-3 font-semibold">Back End</h4>
+                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                      <div>Node.js</div>
+                      <div>Express.js</div>
+                      <div>Laravel</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-2xl mb-3 font-semibold">Databases</h4>
+                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                      <div>Prisma</div>
+                      <div>MongoDB</div>
+                      <div>SQL</div>
+                      <div>Firebase</div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="text-2xl mb-3 font-semibold">Others</h4>
+                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                      <div>Framer</div>
+                      <div>Git & GitHub</div>
+                      <div>Thirdweb</div>
                     </div>
                   </div>
                 </div>
