@@ -1,6 +1,6 @@
 "use client";
 import "animate.css";
-import { useActiveStore } from "@/store/activeStore";
+import { useActiveStore, useArchiveStore } from "@/store/activeStore";
 import { TextGenerateEffect } from "@/components/text-generate";
 import Hero from "@/components/v2/hero";
 import TechStack from "@/components/v2/tech-stack";
@@ -19,11 +19,15 @@ export default function Home() {
     state.updateActiveComponent,
   ]);
 
+  const [folder, setFolder] = useArchiveStore(state => [state.value, state.setValue])
+
+
   return (
     <>
-      <main className="relative bg-black bg-grid-small-[#d1bfa7]/30 min-h-[200vh] max-w-[1440px] w-full">
+      <main className="relative bg-black bg-grid-small-[#d1bfa7]/30 min-h-[200vh] w-full">
         <Navbar />
         <Hero />
+
 
         <div className="w-[90%] mx-auto text-4xl lg:text-5xl font-medium text-gray-500 font-grotesk py-24 ">
           {/* <TextGenerateEffect words={words} /> */}
@@ -31,9 +35,9 @@ export default function Home() {
         </div>
 
         <Experience />
-        <SelProjects />
-        {/* <SimpleProjects /> */}
-        <TechStack />
+        {/* <SelProjects /> */}
+        <SimpleProjects />
+        {/* <TechStack /> */}
         <Footer />
       </main>
     </>

@@ -1,8 +1,10 @@
 "use client";
 import Navbar from "@/components/v2/navbar";
+import { useArchiveStore } from "@/store/activeStore";
 import {
   ArrowLeft,
   ArrowRight,
+  CornerUpLeft,
   FolderIcon,
   SquareArrowOutUpRight,
 } from "lucide-react";
@@ -210,7 +212,9 @@ const content = [
 ];
 
 const Page = () => {
-  const [folder, setFolder] = useState("/");
+  // const [folder, setFolder] = useState("/");
+
+  const [folder, setFolder] = useArchiveStore(state => [state.value, state.setValue])
 
   function containsNumber(str) {
     return !isNaN(parseFloat(str)) && parseFloat(str) < 30;
@@ -224,17 +228,26 @@ const Page = () => {
     <div className="relative bg-black flex flex-col bg-grid-small-[#d1bfa7]/30 font-grotesk min-h-[100vh] w-full">
       <Navbar />
 
-      <div className="border-b border-[#d1bfa7]/50 h-[10vh] flex justify-center items-center ">
+      {/* <div className="border-b border-[#d1bfa7]/50 h-[10vh] flex justify-center items-center ">
         <div className="text-3xl font-bold text-[#d1bfa7] w-[90%] mx-auto  ">
           <Link href="/">KA.</Link>
         </div>
-      </div>
+      </div> */}
 
       <div className=" flex-grow">
         <div className=" flex items-start mx-auto h-full">
-          <div className="flex-1 bg-black border-r border-[#d1bfa7]/50 p-4 min-h-[90vh] hidden lg:block">
-            <h5 className="text-3xl font-semibold text-[#d1bfa7]">Archive</h5>
-            <div className="pt-7">
+          <div className="flex-1 bg-black border-r border-[#d1bfa7]/50 p-4 min-h-[100vh] hidden lg:block">
+            <h5 className="text-3xl font-semibold text-[#d1bfa7]">Koye&apos;s Archive</h5>
+            <div className="pt-16">
+              <div className="mb-5">
+                <div
+                  className="group text-neutral-400 flex items-center space-x-1 cursor-pointer w-full"
+                  onClick={() => setFolder("/")}
+                >
+                  <CornerUpLeft size={20} />
+                  <span className="group-hover:underline pl-2">Back to Homepage</span>
+                </div>
+              </div>
               <div>
                 <div
                   className="flex group text-[#d1bfa7] cursor-pointer justify-between w-full"
@@ -287,6 +300,23 @@ const Page = () => {
                     <span>/framer-projects</span>
                   </div>
                 </div>
+                <div
+                  className="my-3"
+                  onClick={() => setFolder("/my-stack")}
+                >
+                  <div
+                    className={`${
+                      folder === "/framer-projects"
+                        ? "text-white"
+                        : "text-neutral-300"
+                    } flex group cursor-pointer justify-between w-full`}
+                  >
+                    <span className="group-hover:underline">
+                      Stack
+                    </span>
+                    <span>/stack</span>
+                  </div>
+                </div>
                 {/* <div className="my-3" onClick={() => setFolder("/frontend-mentor")}>
                   <div
                     className={`flex group text-neutral-300 cursor-pointer justify-between w-full`}
@@ -301,10 +331,18 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="lg:flex-[3] xl:flex-[3.8] lg:h-[90vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black ">
+          <div className="lg:flex-[3] xl:flex-[3] lg:h-[100vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black ">
             {folder === "/" ? (
               // Main archive view
               <div className="grid grid-cols-3 lg:grid-cols-5 p-3 ">
+                <Link
+                  href={"/"}
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  onClick={() => setFolder("/")}
+                >
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
+                  <span className="text-neutral-400 pl-8"><CornerUpLeft size={16} /></span>
+                </Link>
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
                   onClick={() => setFolder("/projects")}
@@ -437,7 +475,7 @@ const Page = () => {
                         target="_blank"
                         className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
                       >
-                        <SquareArrowOutUpRight size={18} /> <span>Link</span>
+                        <SquareArrowOutUpRight size={18} /> <span>View Site</span>
                       </Link>
                     </div>
                     <div className="flex justify-end">
@@ -546,8 +584,8 @@ const Page = () => {
                           {content[folder - 31].github
                             ? "View Repo"
                             : content[folder - 31].live
-                            ? "Live Link"
-                            : "Go To Project"}
+                            ? "View Site"
+                            : "View Site"}
                         </span>
                       </Link>
                     </div>
