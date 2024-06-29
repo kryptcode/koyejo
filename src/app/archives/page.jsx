@@ -246,7 +246,7 @@ const content = [
   },
   {
     id: 34,
-    title: "M.A.A.D. City Ink",
+    title: "M.A.A.D. City Inks",
     techs: ["Next.js", "TailwindCSS", "aos"],
     description:
       "Multi-page website for a tattoo and piercing studio.",
