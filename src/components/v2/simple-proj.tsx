@@ -39,6 +39,16 @@ const content = [
   },
   {
     id: 34,
+    title: "M.A.A.D. City Ink",
+    techs: ["Next.js", "TailwindCSS", "aos"],
+    description:
+      "Multi-page website for a tattoo and piercing studio.",
+    img: "https://i.ibb.co/FzS0nzY/Screenshot-2024-06-29-at-10-17-17-Maad-City-Tattoos.png",
+    github: "",
+    live: "https://maad-city.vercel.app",
+  },
+  {
+    id: 35,
     title: "MediVault EMR",
     description:
       " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
