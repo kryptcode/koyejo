@@ -259,7 +259,7 @@ const content = [
     title: "MediVault EMR",
     description:
       " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
-    img: "",
+    img: "https://i.ibb.co/cDxz485/Screenshot-2024-07-05-at-20-39-17-Medi-Vault.png",
     github: "",
     live: "",
   },
