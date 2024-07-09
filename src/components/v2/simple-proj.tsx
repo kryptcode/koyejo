@@ -20,7 +20,7 @@ const content = [
   {
     id: 32,
     title: "LinkStack",
-    description: "Stack your links in one place.",
+    description: "Stack your links in one place. With page customization and bio.",
     live: "https://linkstack-ten-sigma.vercel.app",
     // github: "https://github.com/kryptcode/linkstack",
     img: "https://i.ibb.co/hBJC2dN/Screenshot-2024-06-21-at-10-39-47-Link-Stack.png",
