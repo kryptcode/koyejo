@@ -39,6 +39,24 @@ const content = [
   },
   {
     id: 34,
+    title: "MediVault EMR",
+    description:
+      " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
+    img: "https://i.ibb.co/cDxz485/Screenshot-2024-07-05-at-20-39-17-Medi-Vault.png",
+    github: "",
+    live: "",
+  },
+  {
+    id: 35,
+    title: "Ọ̀rẹ́ Ọkàn",
+    description:
+    "A chatbot designed to address mental health issues and provide support in Yoruba.",
+    img: "https://i.ibb.co/K5kYdqx/Screenshot-2024-06-15-at-20-44-04-Mental-Wellness-Bot.png",
+    github: "https://github.com/kryptcode/mchl-yor-chatbot",
+    techs: ["Next.js", "Flask", "Python", "Jupyter Notebook", "Clerk"],
+  },
+  {
+    id: 36,
     title: "M.A.A.D. City Inks",
     techs: ["Next.js", "TailwindCSS", "aos"],
     description:
@@ -46,15 +64,6 @@ const content = [
     img: "https://i.ibb.co/FzS0nzY/Screenshot-2024-06-29-at-10-17-17-Maad-City-Tattoos.png",
     github: "",
     live: "https://maad-city.vercel.app",
-  },
-  {
-    id: 35,
-    title: "MediVault EMR",
-    description:
-      " EMR for storing and managing patient data, ensuring robust, interoperable, and secure handling of healthcare information. ",
-    img: "https://i.ibb.co/cDxz485/Screenshot-2024-07-05-at-20-39-17-Medi-Vault.png",
-    github: "",
-    live: "",
   },
 ];
 
