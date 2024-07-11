@@ -200,6 +200,15 @@ const projects = [
     link: "https://c-rentals.vercel.app/",
     techs: ["React", "Vite", "recoil", "aos"],
   },
+  {
+    id: 16,
+    title: "M.A.A.D. City Inks",
+    techs: ["Next.js", "TailwindCSS", "aos"],
+    description:
+      "Multi-page website for a tattoo and piercing studio.",
+    img: "https://i.ibb.co/FzS0nzY/Screenshot-2024-06-29-at-10-17-17-Maad-City-Tattoos.png",
+    link: "https://maad-city.vercel.app",
+  },
 ];
 
 const content = [
@@ -252,16 +261,6 @@ const content = [
     img: "https://i.ibb.co/K5kYdqx/Screenshot-2024-06-15-at-20-44-04-Mental-Wellness-Bot.png",
     github: "https://github.com/kryptcode/mchl-yor-chatbot",
     techs: ["Next.js", "Flask", "Python", "Jupyter Notebook", "Clerk"],
-  },
-  {
-    id: 36,
-    title: "M.A.A.D. City Inks",
-    techs: ["Next.js", "TailwindCSS", "aos"],
-    description:
-      "Multi-page website for a tattoo and piercing studio.",
-    img: "https://i.ibb.co/FzS0nzY/Screenshot-2024-06-29-at-10-17-17-Maad-City-Tattoos.png",
-    github: "",
-    live: "https://maad-city.vercel.app",
   },
 ];
 
