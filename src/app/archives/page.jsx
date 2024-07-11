@@ -292,7 +292,8 @@ const Page = () => {
 
       <div className=" flex-grow">
         <div className=" flex items-start mx-auto h-full">
-          <div className="flex-1 bg-black border-r border-[#d1bfa7]/50 p-4 min-h-[100vh] hidden lg:block">
+          <div className="flex-1  py-10 h-[100vh] hidden pl-2 lg:block">
+          <div className="bg-black border border-[#d1bfa7]/80 h-full p-4 rounded-2xl ">
             <h5 className="text-3xl font-semibold text-[#d1bfa7]">
               Koye&apos;s Archive
             </h5>
@@ -381,6 +382,9 @@ const Page = () => {
                     <span>/frontend-mentor</span>
                   </div>
                 </div> */}
+              </div>
+              
+
               </div>
             </div>
           </div>
