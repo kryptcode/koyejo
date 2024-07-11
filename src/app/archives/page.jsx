@@ -169,7 +169,7 @@ const projects = [
     techs: ["Next.js", "TailwindCSS"],
   },
   {
-    id: 13,
+    id: 12,
     title: "Hulu ish",
     description: "Hulu home page built with nextjs and tmdb api.",
     img: "https://i.ibb.co/8Yd3TM9/Screenshot-2023-12-13-at-21-13-53-Hulu-Clone.png",
@@ -177,7 +177,7 @@ const projects = [
     techs: ["Next.js", "TMDb", "TailwindCSS"],
   },
   {
-    id: 14,
+    id: 13,
     title: "Gymate",
     description: "Multipage website for a gym.",
     img: "https://i.ibb.co/F76m2wq/Screenshot-2024-06-24-at-09-06-08-Gymate.png",
@@ -185,7 +185,7 @@ const projects = [
     techs: ["React", "Vite", "TailwindCSS", "Recoil"],
   },
   {
-    id: 15,
+    id: 14,
     title: "CarHub",
     description: "Car rentals website.",
     img: "https://i.ibb.co/3B63rym/Screenshot-2024-06-24-at-09-01-10-Car-Hub.png",
@@ -193,7 +193,7 @@ const projects = [
     techs: ["Next.js", "TypeScript", "TailwindCSS"],
   },
   {
-    id: 16,
+    id: 15,
     title: "c-rentals",
     description: "Car rentals website.",
     img: "https://i.ibb.co/YhRRbD1/Screenshot-2024-06-24-at-09-02-48-CRentals.png",
