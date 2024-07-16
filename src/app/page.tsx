@@ -51,7 +51,7 @@ export default function Home() {
           <div>
             {
               content.map((item, index) => (
-                <div className="mb-4 lg:mb-10">
+                <div className="mb-4 lg:mb-10" key={index}>
                   <div>
                     <Link
                       onClick={() => setFolder(item.id)}
