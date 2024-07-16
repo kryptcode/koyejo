@@ -254,7 +254,7 @@ const Page = () => {
                   </div>
 
                   <div>
-                    <div className="flex justify-start flex-wrap gap-3 mb-4">
+                    <div className="flex justify-start flex-wrap gap-3 mb-4 mt-2">
                       {projects[folder].techs.map((tech, index) => (
                         <div
                           key={index}
@@ -352,7 +352,7 @@ const Page = () => {
                   </div>
 
                   <div>
-                    <div className="flex justify-start flex-wrap gap-3 mb-4">
+                    <div className="flex justify-start flex-wrap gap-3 mb-4 mt-2">
                       {content[folder - 31].techs?.map((tech, index) => (
                         <div
                           key={index}
@@ -544,7 +544,7 @@ const Page = () => {
                   </div>
 
                   <div>
-                    <div className="flex justify-start flex-wrap gap-3 mb-4">
+                    <div className="flex justify-start flex-wrap gap-3 mb-4 mt-2">
                       {archives[folder - 60].techs.map((tech, index) => (
                         <div
                           key={index}
