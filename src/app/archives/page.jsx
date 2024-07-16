@@ -11,6 +11,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import IconCloud from "@/components/magicui/icon-cloud";
 import { slugs, projects, content, archives } from '@/contants/projects'
+import { PageDock } from "@/components/page-dock";
 
 const Page = () => {
   // const [folder, setFolder] = useState("/");
@@ -33,11 +34,13 @@ const Page = () => {
   }
 
   return (
-    <div className="relative bg-black flex flex-col bg-grid-small-[#d1bfa7]/30 font-grotesk min-h-[100vh] w-full">
+    <div className="relative max-w-[1440px] bg-white text-black flex flex-col font-grotesk min-h-[100vh] w-full">
+      <PageDock />
+
       <div className=" flex-grow">
         <div className=" flex items-start mx-auto h-full">
           <div className="flex-1  py-10 h-[100vh] hidden pl-2 lg:block">
-          <div className="bg-black border border-[#d1bfa7]/80 h-full p-4 rounded-2xl ">
+          <div className="bg-black h-full p-4 rounded-2xl ">
             <h5 className="text-3xl font-semibold text-[#d1bfa7]">
               Koye&apos;s Lab
             </h5>
@@ -129,61 +132,61 @@ const Page = () => {
               <div className="flex flex-wrap gap-5 p-3 ">
                 <Link
                   href={"/"}
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
                   <span className="text-neutral-400 pl-8">
                     <CornerUpLeft size={16} />
                   </span>
                 </Link>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/projects")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-2">Projects</span>
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                  <span className="text-black truncate text-sm pl-2">Projects</span>
                 </div>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/side-projects")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-2">Side Projects</span>
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                  <span className="text-black truncate text-sm pl-2">Side Projects</span>
                 </div>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/framer-projects")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-2">Archive</span>
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                  <span className="text-black truncate text-sm pl-2">Archive</span>
                 </div>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/my-stack")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-2">Stack</span>
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                  <span className="text-black truncate text-sm pl-2">Stack</span>
                 </div>
               </div>
             ) : folder == "/side-projects" ? (
               // View when you click on  side-project folder
               <div className="flex flex-wrap gap-5 p-3 ">
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-2">..</span>
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                  <span className="text-black truncate text-sm pl-2">..</span>
                 </div>
                 {projects.map((project, index) => (
                   <div
                     key={index}
-                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                     onClick={() => setFolder(project.id)}
                   >
-                    <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                    <span className="text-neutral-400 pl-2">
+                    <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                    <span className="text-black truncate text-sm pl-2">
                       {project.title}
                     </span>
                   </div>
@@ -193,20 +196,20 @@ const Page = () => {
               // View when you click on projects folder
               <div className="flex flex-wrap gap-5 p-3 ">
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-2">..</span>
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                  <span className="text-black truncate text-sm pl-2">..</span>
                 </div>
                 {content.map((project, index) => (
                   <div
                     key={index}
-                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                     onClick={() => setFolder(project.id)}
                   >
-                    <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                    <span className="text-neutral-400 pl-2">
+                    <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                    <span className="text-black truncate text-sm pl-2">
                       {project.title}
                     </span>
                   </div>
@@ -228,13 +231,13 @@ const Page = () => {
                   >
                     / Side Projects
                   </span>{" "}
-                  <span className="text-neutral-500">
+                  <span className="text-black/80">
                     / {projects[folder].title}{" "}
                   </span>
                 </div>
 
                 <div className="pt-3">
-                  <div className="mb-6">
+                  <div className="">
                     <div className="mb-4">
                       <img
                         className="rounded-lg max-w-[600px] w-full"
@@ -244,7 +247,7 @@ const Page = () => {
                     </div>
                     <h2
                       h2
-                      className="text-[#d1bfa7] text-3xl mb-4 lg:text-5xl font-medium"
+                      className="text-black text-3xl lg:text-5xl font-semibold"
                     >
                       {projects[folder].title}
                     </h2>
@@ -255,7 +258,7 @@ const Page = () => {
                       {projects[folder].techs.map((tech, index) => (
                         <div
                           key={index}
-                          className=" border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                          className=" border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#000] transition-all ease-linear duration-500"
                         >
                           {tech}
                         </div>
@@ -263,10 +266,7 @@ const Page = () => {
                     </div>
 
                     <div className="mb-5">
-                      <h6 className="text-xl font-medium mb-1 text-neutral-300">
-                        Description:
-                      </h6>
-                      <p className="text-lg lg:w-1/2 text-neutral-400 ">
+                      <p className="text-lg lg:text-xl sm:w-1/2 lg:w-2/3 text-black/80 ">
                         {projects[folder].description}
                       </p>
                     </div>
@@ -274,7 +274,7 @@ const Page = () => {
                       <Link
                         href={projects[folder].link}
                         target="_blank"
-                        className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                        className="hover:bg-[#000] hover:text-white flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#000] transition-all ease-linear duration-500"
                       >
                         <SquareArrowOutUpRight size={18} />{" "}
                         <span>View Site</span>
@@ -286,8 +286,8 @@ const Page = () => {
                           className={`${
                             folder == 0
                               ? "cursor-not-allowed opacity-70"
-                              : "hover:bg-[#d1bfa7] hover:text-black"
-                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                              : "hover:bg-[#000] hover:text-white"
+                          }  flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   000-[#d1bfa7] transition-all ease-linear duration-500`}
                           onClick={() => folder > 0 && setFolder(folder - 1)}
                         >
                           <ArrowLeft size={18} />
@@ -298,8 +298,8 @@ const Page = () => {
                           className={`${
                             folder == projects.length - 1
                               ? "cursor-not-allowed opacity-70"
-                              : "hover:bg-[#d1bfa7] hover:text-black"
-                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                              : "hover:bg-[#000] hover:text-white"
+                          }  flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   000-[#d1bfa7] transition-all ease-linear duration-500`}
                           onClick={() =>
                             folder < projects.length - 1 &&
                             setFolder(folder + 1)
@@ -329,13 +329,13 @@ const Page = () => {
                   >
                     / Projects
                   </span>{" "}
-                  <span className="text-neutral-500">
+                  <span className="text-black/80">
                     / {content[folder - 31].title}{" "}
                   </span>
                 </div>
 
                 <div className="pt-3">
-                  <div className="mb-6">
+                  <div className="">
                     <div className="mb-4">
                       <img
                         className="rounded-lg max-w-[600px] w-full object-contain "
@@ -345,7 +345,7 @@ const Page = () => {
                     </div>
                     <h2
                       h2
-                      className="text-[#d1bfa7] text-3xl mb-4 lg:text-5xl font-medium"
+                      className="text-black text-3xl lg:text-5xl font-semibold"
                     >
                       {content[folder - 31].title}
                     </h2>
@@ -356,7 +356,7 @@ const Page = () => {
                       {content[folder - 31].techs?.map((tech, index) => (
                         <div
                           key={index}
-                          className=" border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                          className=" border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#000] transition-all ease-linear duration-500"
                         >
                           {tech}
                         </div>
@@ -364,10 +364,7 @@ const Page = () => {
                     </div>
 
                     <div className="mb-5">
-                      <h6 className="text-xl font-medium mb-1 text-neutral-300">
-                        Description:
-                      </h6>
-                      <p className="text-lg lg:w-1/2 text-neutral-400 ">
+                      <p className="text-lg lg:text-xl sm:w-1/2 lg:w-2/3 text-black/80 ">
                         {content[folder - 31].description}
                       </p>
                     </div>
@@ -379,7 +376,7 @@ const Page = () => {
                           ""
                         }
                         target="_blank"
-                        className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                        className="hover:bg-[#000] hover:text-white flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#000] transition-all ease-linear duration-500"
                       >
                         <SquareArrowOutUpRight size={18} />{" "}
                         <span>
@@ -397,8 +394,8 @@ const Page = () => {
                           className={`${
                             folder == 31
                               ? "cursor-not-allowed opacity-70"
-                              : "hover:bg-[#d1bfa7] hover:text-black"
-                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                              : "hover:bg-[#000] hover:text-white"
+                          }  flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5  transition-all ease-linear duration-500`}
                           onClick={() => folder > 31 && setFolder(folder - 1)}
                         >
                           <ArrowLeft size={18} />
@@ -409,8 +406,8 @@ const Page = () => {
                           className={`${
                             folder == content.length + 30
                               ? "cursor-not-allowed opacity-70"
-                              : "hover:bg-[#d1bfa7] hover:text-black"
-                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                              : "hover:bg-[#000] hover:text-white"
+                          }  flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   000-[#d1bfa7] transition-all ease-linear duration-500`}
                           onClick={() =>
                             folder < content.length + 30 &&
                             setFolder(folder + 1)
@@ -426,23 +423,23 @@ const Page = () => {
               </div>
             ) : folder === "/my-stack" ? (
               <div>
-                <h6 className="underline cursor-pointer text-lg text-neutral-500 mb-4" onClick={() => setFolder('/')}>
+                <h6 className="underline cursor-pointer text-lg text-black mb-4" onClick={() => setFolder('/')}>
                   ../archive
                 </h6>
-                <h5 className="text-2xl font-medium text-[#d1bfa7]">
+                <h5 className="text-4xl font-medium mb-8 text-[#000]">
                   My Tech Stack
                 </h5>
-                <div>
+                {/* <div>
                   <div className="w-full">
                     <div className="relative flex h-full mx-auto max-w-[45rem] items-center justify-center overflow-hidden rounded-lg bg-background px-20 pb-20 pt-4 ">
                       <IconCloud iconSlugs={slugs} />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
                   <div>
                     <h4 className="text-2xl mb-3 font-semibold">Languages</h4>
-                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                    <div className=" font-medium grid gap-1.5 text-black/80 text-lg">
                       <div>TypeScript</div>
                       <div>JavaScript</div>
                       <div>Python</div>
@@ -451,7 +448,7 @@ const Page = () => {
                   </div>
                   <div>
                     <h4 className="text-2xl mb-3 font-semibold">Front End</h4>
-                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                    <div className=" font-medium grid gap-1.5 text-black/80 text-lg">
                       <div>React & Next</div>
                       <div>TailwindCSS</div>
                       <div>HTML & CSS</div>
@@ -460,7 +457,7 @@ const Page = () => {
                   </div>
                   <div>
                     <h4 className="text-2xl mb-3 font-semibold">Back End</h4>
-                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                    <div className=" font-medium grid gap-1.5 text-black/80 text-lg">
                       <div>Node.js</div>
                       <div>Express.js</div>
                       <div>Laravel</div>
@@ -468,7 +465,7 @@ const Page = () => {
                   </div>
                   <div>
                     <h4 className="text-2xl mb-3 font-semibold">Databases</h4>
-                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                    <div className=" font-medium grid gap-1.5 text-black/80 text-lg">
                       <div>Prisma</div>
                       <div>MongoDB</div>
                       <div>SQL</div>
@@ -477,7 +474,7 @@ const Page = () => {
                   </div>
                   <div>
                     <h4 className="text-2xl mb-3 font-semibold">Others</h4>
-                    <div className=" font-medium grid gap-1.5 text-neutral-500 text-lg">
+                    <div className=" font-medium grid gap-1.5 text-black/80 text-lg">
                       <div>Framer</div>
                       <div>Git & GitHub</div>
                       <div>Thirdweb</div>
@@ -489,20 +486,20 @@ const Page = () => {
               <div>
                 <div className="flex flex-wrap gap-5 p-3 ">
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                   onClick={() => setFolder("/")}
                 >
-                  <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                  <span className="text-neutral-400 pl-2">..</span>
+                  <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                  <span className="text-black truncate text-sm pl-2">..</span>
                 </div>
                 {archives.map((project, index) => (
                   <div
                     key={index}
-                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
+                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
                     // onClick={() => setFolder(project.id)}
                   >
-                    <img src="icons8-folder.png" alt="" className="w-24 h-24" />
-                    <span className="text-neutral-400 pl-2">
+                    <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
+                    <span className="text-black truncate text-sm pl-2">
                       {project.title}
                     </span>
                   </div>
@@ -524,13 +521,13 @@ const Page = () => {
                   >
                     / Archive 
                   </span>{" "}
-                  <span className="text-neutral-500">
+                  <span className="text-black/80">
                     / {archives[folder - 60].title}{" "}
                   </span>
                 </div>
 
                 <div className="pt-3">
-                  <div className="mb-6">
+                  <div className="">
                     <div className="mb-4">
                       <img
                         className="rounded-lg max-w-[600px] w-full"
@@ -540,7 +537,7 @@ const Page = () => {
                     </div>
                     <h2
                       h2
-                      className="text-[#d1bfa7] text-3xl mb-4 lg:text-5xl font-medium"
+                      className="text-black text-3xl lg:text-5xl font-semibold"
                     >
                       {archives[folder - 60].title}
                     </h2>
@@ -551,7 +548,7 @@ const Page = () => {
                       {archives[folder - 60].techs.map((tech, index) => (
                         <div
                           key={index}
-                          className=" border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                          className=" border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#000] transition-all ease-linear duration-500"
                         >
                           {tech}
                         </div>
@@ -559,10 +556,7 @@ const Page = () => {
                     </div>
 
                     <div className="mb-5">
-                      <h6 className="text-xl font-medium mb-1 text-neutral-300">
-                        Description:
-                      </h6>
-                      <p className="text-lg lg:w-1/2 text-neutral-400 ">
+                      <p className="text-lg lg:text-xl sm:w-1/2 lg:w-2/3 text-black/80 ">
                         {archives[folder - 60].description}
                       </p>
                     </div>
@@ -570,7 +564,7 @@ const Page = () => {
                       <Link
                         href={archives[folder - 60].link}
                         target="_blank"
-                        className="hover:bg-[#d1bfa7] hover:text-black flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500"
+                        className="hover:bg-[#000] hover:text-white flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#000] transition-all ease-linear duration-500"
                       >
                         <SquareArrowOutUpRight size={18} />{" "}
                         <span>View Site</span>
@@ -582,8 +576,8 @@ const Page = () => {
                           className={`${
                             folder == 0
                               ? "cursor-not-allowed opacity-70"
-                              : "hover:bg-[#d1bfa7] hover:text-black"
-                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                              : "hover:bg-[#000] hover:text-white"
+                          }  flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   000-[#d1bfa7] transition-all ease-linear duration-500`}
                           onClick={() => folder > 0 && setFolder(folder - 1)}
                         >
                           <ArrowLeft size={18} />
@@ -594,8 +588,8 @@ const Page = () => {
                           className={`${
                             folder == projects.length - 1
                               ? "cursor-not-allowed opacity-70"
-                              : "hover:bg-[#d1bfa7] hover:text-black"
-                          }  flex space-x-3 items-center border border-[#d1bfa7] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   text-[#d1bfa7] transition-all ease-linear duration-500`}
+                              : "hover:bg-[#000] hover:text-white"
+                          }  flex space-x-3 items-center border border-[#000] font-medium p-1.5 px-5  border-l-[3.7px] border-b-[3.7px] rounded-md py-1.5   000-[#d1bfa7] transition-all ease-linear duration-500`}
                           onClick={() =>
                             folder < projects.length - 1 &&
                             setFolder(folder + 1)
@@ -610,7 +604,7 @@ const Page = () => {
                 </div>
               </div>
             ) : (
-              <div className="text-center text-neutral-500">
+              <div className="text-center text-black/80">
                 <div>Dir Not Available</div>
                 <div>
                   Go back to{" "}

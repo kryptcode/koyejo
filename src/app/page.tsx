@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="relative bg-white font-ham text-black min-h-[200vh] w-full">
+      <main className="relative bg-white font-grotesk text-black min-h-[200vh] w-full">
         {/* Intro */}
         <div className=" p-5 lg:p-10 text-3xl lg:text-6xl font-medium ">
           I&apos;m Koye, a developer with a passion for developing and implementing experiences that standout. Currently available for freelance projects and full-time positions.
@@ -72,6 +72,12 @@ export default function Home() {
                 </div>
               ))
             }
+          </div>
+
+          <div className="py-10">
+            <Link href="/archives" className=" inline-block cursor-pointer group border-b-4 border-black hover:border-white translate-x-0 duration-300 ease-linear text-3xl lg:text-5xl font-medium">
+              View More
+            </Link>
           </div>
         </div>
 
