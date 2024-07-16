@@ -126,7 +126,7 @@ const Page = () => {
           <div className="lg:flex-[3] xl:flex-[3] lg:h-[100vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black p-5 ">
             {folder === "/" ? (
               // Main archive view
-              <div className="grid grid-cols-3 lg:grid-cols-5 p-3 ">
+              <div className="flex flex-wrap gap-5 p-3 ">
                 <Link
                   href={"/"}
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
@@ -168,7 +168,7 @@ const Page = () => {
               </div>
             ) : folder == "/side-projects" ? (
               // View when you click on  side-project folder
-              <div className="grid grid-cols-3 lg:grid-cols-4 p-3 ">
+              <div className="flex flex-wrap gap-5 p-3 ">
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
                   onClick={() => setFolder("/")}
@@ -191,7 +191,7 @@ const Page = () => {
               </div>
             ) : folder == "/projects" ? (
               // View when you click on projects folder
-              <div className="grid grid-cols-3 lg:grid-cols-4 p-3 ">
+              <div className="flex flex-wrap gap-5 p-3 ">
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
                   onClick={() => setFolder("/")}
@@ -487,7 +487,7 @@ const Page = () => {
               </div>
             ) : folder === "/framer-projects" ?  (
               <div>
-                <div className="grid grid-cols-3 lg:grid-cols-4 p-3 ">
+                <div className="flex flex-wrap gap-5 p-3 ">
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start"
                   onClick={() => setFolder("/")}
