@@ -40,7 +40,8 @@ const config = {
     extend: {
       fontFamily: {
         "grotesk": ["Space Grotesk", "sans-serif"],
-        "inter": ["Inter", "sans-serif"]
+        "inter": ["Inter", "sans-serif"],
+        "ham": ["Hanken Grotesk"]
       },
       colors: {
         border: "hsl(var(--border))",
