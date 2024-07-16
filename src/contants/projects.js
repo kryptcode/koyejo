@@ -262,4 +262,12 @@ export const archives = [
         link: "https://c-rentals.vercel.app/",
         techs: ["React", "Vite", "recoil", "aos"],
       },
+      {
+        id: 69,
+        title: "The Column",
+        description: "Page for luxury fashion store.",
+        img: "https://i.ibb.co/5RB7GCR/Screenshot-2024-07-16-at-23-26-58-The-Column.png",
+        link: "https://the-column-store.vercel.app/",
+        techs: ["Next.js", "TailwindCSS", "framer-motion", "TypeScript"],
+      },
 ]
