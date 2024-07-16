@@ -126,6 +126,14 @@ export  const projects = [
       img: "https://i.ibb.co/FzS0nzY/Screenshot-2024-06-29-at-10-17-17-Maad-City-Tattoos.png",
       link: "https://maad-city.vercel.app",
     },
+    {
+      id: 9,
+      title: "The Column",
+      description: "Page for luxury fashion store.",
+      img: "https://i.ibb.co/5RB7GCR/Screenshot-2024-07-16-at-23-26-58-The-Column.png",
+      link: "https://the-column-store.vercel.app/",
+      techs: ["Next.js", "TailwindCSS", "framer-motion", "TypeScript"],
+    },
   ];
   
 export  const content = [
@@ -261,13 +269,5 @@ export const archives = [
         img: "https://i.ibb.co/YhRRbD1/Screenshot-2024-06-24-at-09-02-48-CRentals.png",
         link: "https://c-rentals.vercel.app/",
         techs: ["React", "Vite", "recoil", "aos"],
-      },
-      {
-        id: 69,
-        title: "The Column",
-        description: "Page for luxury fashion store.",
-        img: "https://i.ibb.co/5RB7GCR/Screenshot-2024-07-16-at-23-26-58-The-Column.png",
-        link: "https://the-column-store.vercel.app/",
-        techs: ["Next.js", "TailwindCSS", "framer-motion", "TypeScript"],
       },
 ]
