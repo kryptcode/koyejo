@@ -183,7 +183,7 @@ export  const content = [
       title: "Ọ̀rẹ́ Ọkàn",
       description:
       "A chatbot designed to address mental health issues and provide support in Yoruba.",
-      img: "https://i.ibb.co/K5kYdqx/Screenshot-2024-06-15-at-20-44-04-Mental-Wellness-Bot.png",
+      img: "https://i.ibb.co/M9QtzRB/Screenshot-2024-07-11-at-10-40-01-r-k-n.png",
       github: "https://github.com/kryptcode/mchl-yor-chatbot",
       techs: ["Next.js", "Flask", "Python", "Jupyter Notebook", "Clerk"],
     },
