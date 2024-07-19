@@ -137,7 +137,7 @@ const Page = () => {
               ) : folder == "/framer-projects" ? (
                 <h2 className="text-4xl font-bold mb-4 p-3 text-[#000]">Archive</h2>
               ) : (
-                <h2 className="text-4xl font-bold mb-4 p-3 text-[#000]"></h2>
+                <h2></h2>
 
               )
             }
