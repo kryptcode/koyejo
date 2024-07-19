@@ -129,15 +129,15 @@ const Page = () => {
           <div className="lg:flex-[3] xl:flex-[3] lg:h-[100vh] overflow-y-scroll scrollbar-thin scrollbar-thumb-black py-5 px-1.5 ">
             {
               folder === "/" ? (
-                <h2 className="text-4xl font-medium mb-8 text-[#000]">Overview</h2>
+                <h2 className="text-4xl font-bold mb-4 p-3 text-[#000]">Overview</h2>
               ) : folder == "/side-projects" ? (
-                <h2 className="text-4xl font-medium mb-8 text-[#000]">Side Projects</h2>
+                <h2 className="text-4xl font-bold mb-4 p-3 text-[#000]">Side Projects</h2>
               ) : folder == "/projects" ? (
-                <h2 className="text-4xl font-medium mb-8 text-[#000]">Projects</h2>
+                <h2 className="text-4xl font-bold mb-4 p-3 text-[#000]">Projects</h2>
               ) : folder == "/framer-projects" ? (
-                <h2 className="text-4xl font-medium mb-8 text-[#000]">Archive</h2>
+                <h2 className="text-4xl font-bold mb-4 p-3 text-[#000]">Archive</h2>
               ) : (
-                <h2 className="text-4xl font-medium mb-8 text-[#000]"></h2>
+                <h2 className="text-4xl font-bold mb-4 p-3 text-[#000]"></h2>
 
               )
             }
