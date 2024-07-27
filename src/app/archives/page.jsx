@@ -149,7 +149,7 @@ const Page = () => {
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-neutral-400 pl-8">
+                  <span className="text-black">
                     <CornerUpLeft size={16} />
                   </span>
                 </Link>
@@ -158,28 +158,28 @@ const Page = () => {
                   onClick={() => setFolder("/projects")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-black truncate text-sm pl-2">Projects</span>
+                  <span className="text-black truncate text-sm">Projects</span>
                 </div>
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/side-projects")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-black truncate text-sm pl-2">Side Projects</span>
+                  <span className="text-black truncate text-sm">Side Projects</span>
                 </div>
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/framer-projects")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-black truncate text-sm pl-2">Archive</span>
+                  <span className="text-black truncate text-sm">Archive</span>
                 </div>
                 <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/my-stack")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-black truncate text-sm pl-2">Stack</span>
+                  <span className="text-black truncate text-sm">Stack</span>
                 </div>
               </div>
             ) : folder == "/side-projects" ? (
@@ -190,7 +190,7 @@ const Page = () => {
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-black truncate text-sm pl-2">..</span>
+                  <span className="text-black truncate text-sm">..</span>
                 </div>
                 {projects.map((project, index) => (
                   <div
@@ -199,7 +199,7 @@ const Page = () => {
                     onClick={() => setFolder(project.id)}
                   >
                     <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                    <span className="text-black truncate text-sm pl-2">
+                    <span className="text-black truncate text-sm">
                       {project.title}
                     </span>
                   </div>
@@ -213,7 +213,7 @@ const Page = () => {
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-black truncate text-sm pl-2">..</span>
+                  <span className="text-black truncate text-sm">..</span>
                 </div>
                 {content.map((project, index) => (
                   <div
@@ -222,7 +222,7 @@ const Page = () => {
                     onClick={() => setFolder(project.id)}
                   >
                     <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                    <span className="text-black truncate text-sm pl-2">
+                    <span className="text-black truncate text-sm">
                       {project.title}
                     </span>
                   </div>
@@ -503,7 +503,7 @@ const Page = () => {
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                  <span className="text-black truncate text-sm pl-2">..</span>
+                  <span className="text-black truncate text-sm">..</span>
                 </div>
                 {archives.map((project, index) => (
                   <div
@@ -512,7 +512,7 @@ const Page = () => {
                     // onClick={() => setFolder(project.id)}
                   >
                     <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
-                    <span className="text-black truncate text-sm pl-2">
+                    <span className="text-black truncate text-sm">
                       {project.title}
                     </span>
                   </div>
