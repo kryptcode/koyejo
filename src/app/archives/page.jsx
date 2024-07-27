@@ -138,15 +138,14 @@ const Page = () => {
                 <h2 className="text-4xl font-bold mb-4 p-3 pt-6 text-[#000]">Archive</h2>
               ) : (
                 <h2></h2>
-
               )
             }
             {folder === "/" ? (
               // Main archive view
-              <div className="flex flex-wrap gap-5 p-3 ">
+              <div className="flex flex-wrap gap-3 p-1 lg:p-3 ">
                 <Link
                   href={"/"}
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
@@ -155,28 +154,28 @@ const Page = () => {
                   </span>
                 </Link>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/projects")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
                   <span className="text-black truncate text-sm pl-2">Projects</span>
                 </div>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/side-projects")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
                   <span className="text-black truncate text-sm pl-2">Side Projects</span>
                 </div>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/framer-projects")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
                   <span className="text-black truncate text-sm pl-2">Archive</span>
                 </div>
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/my-stack")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
@@ -185,9 +184,9 @@ const Page = () => {
               </div>
             ) : folder == "/side-projects" ? (
               // View when you click on  side-project folder
-              <div className="flex flex-wrap gap-5 p-3 ">
+              <div className="flex flex-wrap gap-3 p-1 lg:p-3 ">
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
@@ -196,7 +195,7 @@ const Page = () => {
                 {projects.map((project, index) => (
                   <div
                     key={index}
-                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                     onClick={() => setFolder(project.id)}
                   >
                     <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
@@ -208,9 +207,9 @@ const Page = () => {
               </div>
             ) : folder == "/projects" ? (
               // View when you click on projects folder
-              <div className="flex flex-wrap gap-5 p-3 ">
+              <div className="flex flex-wrap gap-3 p-1 lg:p-3 ">
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
@@ -219,7 +218,7 @@ const Page = () => {
                 {content.map((project, index) => (
                   <div
                     key={index}
-                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                     onClick={() => setFolder(project.id)}
                   >
                     <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
@@ -498,9 +497,9 @@ const Page = () => {
               </div>
             ) : folder === "/framer-projects" ?  (
               <div>
-                <div className="flex flex-wrap gap-5 p-3 ">
+                <div className="flex flex-wrap gap-3 p-1 lg:p-3 ">
                 <div
-                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                  className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                   onClick={() => setFolder("/")}
                 >
                   <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
@@ -509,7 +508,7 @@ const Page = () => {
                 {archives.map((project, index) => (
                   <div
                     key={index}
-                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-start w-32"
+                    className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
                     // onClick={() => setFolder(project.id)}
                   >
                     <img src="icons8-folder.png" alt="" className="w-24 h-24 grayscale contrast-100" />
