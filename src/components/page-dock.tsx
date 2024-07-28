@@ -112,7 +112,7 @@ export function PageDock() {
               <TooltipTrigger asChild>
                 <Link href="" onClick={toggleDarkMode}  className={cn(buttonVariants({variant: "ghost"}), "text-sm")}>
                   {
-                    theme === "dark" ? <MoonIcon size={18} /> : <SunIcon size={18} /> 
+                    theme !== "dark" ? <MoonIcon size={18} /> : <SunIcon size={18} /> 
                   }
                 </Link>
               </TooltipTrigger>

@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           <div className="pb-10 pt-4">
-            <Link href="/archives" className=" inline-block cursor-pointer group border-b-4 pb-1 leading-none border-black dark:border-white dark:text-goldexperience hover:border-white translate-x-0 duration-300 ease-linear text-3xl lg:text-5xl font-medium">
+            <Link href="/archives" className=" inline-block cursor-pointer group border-b-4 pb-1 leading-none border-black dark:border-goldexperience dark:text-goldexperience hover:border-white translate-x-0 duration-300 ease-linear text-3xl lg:text-5xl font-medium">
               View More
             </Link>
           </div>
@@ -84,7 +84,7 @@ export default function Home() {
         <div className="p-5 lg:p-10 pb-24">
           <h5 className="uppercase text-2xl lg:text-4xl mb-5">Socials</h5>
           <div className="text-3xl lg:text-6xl font-extrabold">
-            Let&apos;s get in touch! You can message me through my <Link href="https://twitter.com/koye_vi" className=" inline-block cursor-pointer group border-b-4 leading-none border-black dark:border-white dark:text-goldexperience hover:border-white translate-x-0 duration-300 ease-linear">Twitter</Link> or by  <Link href="mailto:adeyombokehd@gmail.com" className=" inline-block cursor-pointer group border-b-4 leading-none border-black dark:border-white dark:text-goldexperience hover:border-white translate-x-0 duration-300 ease-linear">sending me an email.</Link>
+            Let&apos;s get in touch! You can message me through my <Link href="https://twitter.com/koye_vi" className=" inline-block cursor-pointer group border-b-4 leading-none border-black dark:border-goldexperience dark:text-goldexperience hover:border-white translate-x-0 duration-300 ease-linear">Twitter</Link> or by  <Link href="mailto:adeyombokehd@gmail.com" className=" inline-block cursor-pointer group border-b-4 leading-none border-black dark:border-goldexperience dark:text-goldexperience hover:border-white translate-x-0 duration-300 ease-linear">sending me an email.</Link>
           </div>
         </div>
 

@@ -34,7 +34,7 @@ export default function RootLayout({
           sizes="16x16"
           href="./favicon-16x16.png"
         />
-        <ThemeProvider attribute="class" defaultTheme="system">{children}</ThemeProvider>
+        <ThemeProvider attribute="class" defaultTheme="dark">{children}</ThemeProvider>
       </body>
     </html>
   );
