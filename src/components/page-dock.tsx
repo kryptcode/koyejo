@@ -1,7 +1,8 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { BeakerIcon, Github, Home, HomeIcon, Mail, TwitterIcon } from "lucide-react";
+import { BeakerIcon, Github, Home, HomeIcon, Mail, MoonIcon, SunIcon, TwitterIcon } from "lucide-react";
 import { Separator } from "./ui/separator";
 import {
   Tooltip,
@@ -12,14 +13,29 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
+import { useTheme } from "next-themes";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function PageDock() {
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
+  function toggleDarkMode() {
+    theme === "dark" ? setTheme("light") : setTheme("dark")
+  }
   return (
     <TooltipProvider>
       <div className="relative">
-        <Dock direction="middle" className="fixed bottom-[50px] rounded-[3rem] left-1/2 -translate-x-1/2">
+        <Dock direction="middle" className="fixed bottom-[50px] rounded-[3rem] left-1/2 -translate-x-1/2 dark:bg-goldexperience dark:text-black dark:border-goldexperience ">
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -88,6 +104,22 @@ export function PageDock() {
               </TooltipTrigger>
               <TooltipContent className="bg-[#444] text-white">
                 <p>Read.CV</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
+          <DockIcon>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link href="" onClick={toggleDarkMode}  className={cn(buttonVariants({variant: "ghost"}), "text-sm")}>
+                  {
+                    theme === "dark" ? <MoonIcon size={18} /> : <SunIcon size={18} /> 
+                  }
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent className="bg-[#444] text-white">
+                <div>
+                  Toggle Theme
+                </div>
               </TooltipContent>
             </Tooltip>
           </DockIcon>

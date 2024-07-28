@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Koye",
@@ -18,7 +16,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head />
-      <body className="bg-white w-screen">
+      <body className="bg-white dark:bg-black w-screen">
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -36,7 +34,7 @@ export default function RootLayout({
           sizes="16x16"
           href="./favicon-16x16.png"
         />
-        <ThemeProvider defaultTheme="dark">{children}</ThemeProvider>
+        <ThemeProvider attribute="class" defaultTheme="system">{children}</ThemeProvider>
       </body>
     </html>
   );
