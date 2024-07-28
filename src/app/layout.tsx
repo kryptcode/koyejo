@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head />
-      <body className="max-w-[1440px]">
+      <body className="">
         <link
           rel="apple-touch-icon"
           sizes="180x180"

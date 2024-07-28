@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="relative bg-white font-grotesk text-black min-h-[200vh] w-full">
+      <main className="relative bg-white font-grotesk text-black min-h-[200vh] max-w-[1440px] w-full">
         {/* Intro */}
         <div className=" p-5 lg:p-10 pt-12 text-3xl lg:text-6xl font-extrabold ">
           I&apos;m Koye, a developer with a passion for developing and implementing experiences that standout. Currently available for freelance projects and full-time positions.
