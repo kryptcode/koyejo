@@ -34,7 +34,7 @@ const Page = () => {
   }
 
   return (
-    <div className="relative max-w-[1440px] bg-white max-w-[1440px] text-black flex flex-col font-grotesk min-h-[100vh] w-full">
+    <div className="relative max-w-[1440px] bg-white text-black flex flex-col font-grotesk min-h-[100vh] w-full">
       <PageDock />
 
       <div className=" flex-grow">
