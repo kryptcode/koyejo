@@ -35,7 +35,7 @@ export function PageDock() {
   return (
     <TooltipProvider>
       <div className="relative">
-        <Dock direction="middle" className="fixed bottom-[50px] rounded-[3rem] left-1/2 -translate-x-1/2 dark:bg-goldexperience dark:text-black dark:border-goldexperience ">
+        <Dock direction="middle" className="fixed bottom-[50px] rounded-[3rem] left-1/2 -translate-x-1/2 bg-black text-white border-black dark:bg-goldexperience dark:text-black dark:border-goldexperience ">
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>
