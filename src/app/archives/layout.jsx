@@ -60,8 +60,8 @@ const Layout = ({ children }) => {
                     className={`text-neutral-300 dark:text-neutral-800 text-sm flex group  cursor-pointer justify-between w-full`}
                     onClick={() => setFolder("/side-projects")}
                   >
-                    <span className="group-hover:underline">Side Projects</span>
-                    <span>/side-projects</span>
+                    <span className="group-hover:underline">Archive</span>
+                    <span>/archive</span>
                   </div>
                 </div>
                 <div

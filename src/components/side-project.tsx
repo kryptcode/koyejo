@@ -23,7 +23,7 @@ export const SideProject = () => {
                     className="cursor-pointer underline hover:opacity-80"
                     onClick={() => setFolder("/side-projects")}
                   >
-                    / Side Projects
+                    / Archive
                   </span>{" "}
                   <span className="text-black/80 dark:text-[#ccc] ">
                     / {projects[folder].title}{" "}

@@ -46,7 +46,7 @@ const Page = () => {
               folder === "/" ? (
                 <h2 className="text-4xl font-bold mb-4 p-3 pt-6 dark:text-goldexperience">Overview</h2>
               ) : folder == "/side-projects" ? (
-                <h2 className="text-4xl font-bold mb-4 p-3 pt-6 dark:text-goldexperience">Side Projects</h2>
+                <h2 className="text-4xl font-bold mb-4 p-3 pt-6 dark:text-goldexperience">Archive</h2>
               ) : folder == "/projects" ? (
                 <h2 className="text-4xl font-bold mb-4 p-3 pt-6 dark:text-goldexperience">Projects</h2>
               ) : folder == "/framer-projects" ? (

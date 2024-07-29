@@ -33,7 +33,7 @@ export const ArchiveOverview = () => {
                   onClick={() => setFolder("/side-projects")}
                 >
                   <img src="icons8-folder.png" alt="" className=" w-24 h-24 grayscale dark:grayscale-0 contrast-0 dark:contrast-100" />
-                  <span className=" dark:text-white truncate text-sm">Side Projects</span>
+                  <span className=" dark:text-white truncate text-sm">Archive</span>
                 </div>
                 {/* <div
                   className="flex hover:opacity-80 cursor-pointer flex-col p-2 items-center w-32"
