@@ -41,7 +41,9 @@ const config = {
       fontFamily: {
         "grotesk": ["Space Grotesk", "sans-serif"],
         "inter": ["Inter", "sans-serif"],
-        "ham": ["Hanken Grotesk"]
+        "ham": ["Hanken Grotesk", "sans-serif"],
+        "rale": ["Raleway", "sans-serif"],
+        "manrope": ["Manrope", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
