@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head />
-      <body className="bg-white dark:bg-black w-screen">
+      <body className="bg-white dark:bg-bg">
         <link
           rel="apple-touch-icon"
           sizes="180x180"
