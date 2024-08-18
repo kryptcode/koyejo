@@ -1,0 +1,25 @@
+import Link from 'next/link'
+import React from 'react'
+
+export const Contact = () => {
+  return (
+    <div className='mt-8 pt-8 pb-24 border-t border-about/50'>
+        <div className="py-10 w-[90%] mx-auto">
+            <div className="flex items-center gap-10">
+                <h2 className="text-3xl lg:text-8xl font-bold text-[#aaa] font-ham">Contact</h2>
+                <div className="h-[4px] rounded-2xl bg-[#aaa] w-full transition-all ease-linear duration-500  " />
+            </div>
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 pt-12">
+                <Link href="https://github.com/kryptcode" target='_blank' rel='noreferrer' className="p-3 text-center border border-[#ccc] hover:bg-[#ccc] hover:text-bg transition-all ease-linear duration-300 hover:tracking-widest font-semibold font-manrope ">GitHub</Link>
+
+                <Link href="mailto:adeyombokehd@gmail.com" target='_blank' rel='noreferrer' className="p-3 text-center border border-[#ccc] hover:bg-[#ccc] hover:text-bg transition-all ease-linear duration-300 hover:tracking-widest font-semibold font-manrope ">Email</Link>
+
+                <Link href="https://read.cv/koyejo" target='_blank' rel='noreferrer' className="p-3 text-center border border-[#ccc] hover:bg-[#ccc] hover:text-bg transition-all ease-linear duration-300 hover:tracking-widest font-semibold font-manrope ">Read.CV</Link>
+
+                <Link href="https://twitter.com/koye_vi" target='_blank' rel='noreferrer' className="p-3 text-center border border-[#ccc] hover:bg-[#ccc] hover:text-bg transition-all ease-linear duration-300 hover:tracking-widest font-semibold font-manrope ">Twitter</Link>
+            </div>
+        </div>
+    </div>
+  )
+}
