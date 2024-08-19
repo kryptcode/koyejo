@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="relative dark:bg-bg dark:text-[#ddd] bg-white font-grotesk text-black max-w-[1440px] w-full">
+      <main className="relative dark:bg-bg dark:text-[#ddd] bg-white font-grotesk text-black max-w-[1440px] w-full overflow-x-hidden">
         <Hero />
         <Feapro />
         <Exp />

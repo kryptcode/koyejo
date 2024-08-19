@@ -1,9 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
+import AnimatedText from './animated-text'
 
 export const Contact = () => {
   return (
-    <div className='mt-8 pt-8 pb-24 border-t border-about/50'>
+    <div className='pt-8 pb-24'>
+        <AnimatedText>
+            <div className="h-[2px] bg-about/50 mb-8" />
+        </AnimatedText>
         <div className="py-10 w-[90%] mx-auto">
             <div className="flex items-center gap-10">
                 <h2 className="text-3xl lg:text-8xl font-bold text-[#aaa] font-ham">Contact</h2>
