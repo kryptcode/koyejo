@@ -73,6 +73,11 @@
   display: flex;
 }
 
+.bg-ash {
+  background: url('../../public/noise.png') #111;
+  background-size: cover;
+}
+
 :root {
   /* Your default theme */
   --background: white;

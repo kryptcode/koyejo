@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <>
-      <main className="relative dark:bg-bg dark:text-[#ddd] bg-white font-grotesk text-black max-w-[1440px] w-full overflow-x-hidden">
+      <main className="relative bg-[url('https://victoreke.com/_next/static/media/noise.51a05f55.png')] bg-opacity-20 dark:text-[#ddd] bg-white font-grotesk text-black max-w-[1440px] w-full overflow-x-hidden">
         <Hero />
         <Feapro />
         <Exp />
