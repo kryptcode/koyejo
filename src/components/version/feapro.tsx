@@ -3,6 +3,8 @@
 import Link from "next/link"
 import AnimatedText from "./animated-text"
 import ScrollMarquee from "./scroll-marquee"
+import { cn } from "@/lib/utils"
+import { buttonVariants } from "../ui/button"
 
 export const Feapro = () => {
   return (
@@ -56,6 +58,12 @@ export const Feapro = () => {
 
                 <div className="text-xl font-manrope font-light pb-6">2024 . Personal Project</div>
             </Link>
+
+            <div className="text-center font-medium pt-5">
+                <Link href="/archives" className={'lg:text-lg font-manrope text-about border border-normaltext p-3 px-10 hover:tracking-widest transition-all ease-linear duration-300'}>
+                My Archives
+                </Link>
+            </div>
 
         </div>
     </div>
