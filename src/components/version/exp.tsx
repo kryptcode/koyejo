@@ -9,7 +9,7 @@ export const Exp = () => {
         </AnimatedText>
         <div className="py-10 w-[90%] mx-auto">
             <div className="flex items-center gap-10">
-                <h2 className="text-3xl lg:text-8xl font-bold text-[#aaa] font-ham">Work <br /> Experience</h2>
+                <h2 className="text-3xl lg:text-8xl font-bold text-[#555] dark:text-[#aaa] font-ham">Work <br /> Experience</h2>
                 <div className="h-[4px] rounded-2xl bg-[#aaa] w-full transition-all ease-linear duration-500  " />
             </div>
 

@@ -14,7 +14,7 @@ export const Feapro = () => {
         </AnimatedText>
         <div className="py-10 w-[90%] mx-auto  ">
             <div className="flex items-center gap-10">
-                <h2 className="text-3xl lg:text-8xl font-bold text-[#aaa] font-ham">Featured <br /> Projects</h2>
+                <h2 className="text-3xl lg:text-8xl font-bold text-[#555] dark:text-[#aaa] font-ham">Featured <br /> Projects</h2>
                 <div className="h-[4px] rounded-2xl bg-[#aaa] w-full transition-all ease-linear duration-500  " />
             </div>
 
@@ -60,7 +60,7 @@ export const Feapro = () => {
             </Link>
 
             <div className="text-center font-medium pt-5">
-                <Link href="/archives" className={'lg:text-lg font-manrope text-about border border-normaltext p-3 px-10 hover:tracking-widest transition-all ease-linear duration-300'}>
+                <Link href="/archives" className={'lg:text-lg font-manrope text-white bg-bg border-bg dark:text-about border dark:border-normaltext p-3 px-10 hover:tracking-widest transition-all ease-linear duration-300'}>
                 My Archives
                 </Link>
             </div>

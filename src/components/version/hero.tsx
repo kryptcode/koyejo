@@ -1,24 +1,41 @@
+"use client"
+
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, buttonVariants } from '../ui/button'
 import { cn } from '@/lib/utils'
+import { useTheme } from 'next-themes'
+import { MoonIcon, SunIcon } from 'lucide-react'
 
 export const Hero = () => {
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
+  function toggleDarkMode() {
+    theme === "dark" ? setTheme("light") : setTheme("dark")
+  }
+
   return (
     <div className='w-[90%] min-h-screen mx-auto py-2 '>
-        {/* <div>
-            <div>K</div>
-            <div>O</div>
-            <div>Y</div>
-            <div>E</div>
-            <div>J</div>
-            <div>O</div>
-        </div> */}
 
-        <div className="py-3">
+        <div className="py-3 flex justify-between items-center">
           <Link href="/" className="uppercase font-manrope font-medium tracking-wide ">
             Adekoyejo Adeyombo
           </Link>
+
+          <div>
+            <Button onClick={toggleDarkMode}>
+              { theme !== "dark" ? <MoonIcon size={18} /> : <SunIcon size={18} />  }
+            </Button>
+          </div>
         </div>
 
         <div className='font-bebas text-9xl lg:text-[13rem] leading-none font-black'>
@@ -39,7 +56,7 @@ export const Hero = () => {
               </div>
             </div>
 
-            <div className='text-lg font-manrope font-light hidden lg:block flex-1 pt-6 text-[#ccc]  '>
+            <div className='text-lg font-manrope font-light hidden lg:block flex-1 pt-6 dark:text-[#ccc]  '>
               <span className='text-about pr-2 '>ABOUT </span> <span>I&apos;m Koye, a developer with a passion for developing and implementing experiences that standout.</span>
               <span className=''> Available for freelance projects and full-time positions.</span>
             </div>
@@ -60,7 +77,7 @@ export const Hero = () => {
 
 
           <div className="flex justify-end ">
-            <div className='text-lg font-manrope font-light lg:hidden text-right  pt-6 text-[#ccc]  w-[70%]  '>
+            <div className='text-lg font-manrope font-light lg:hidden text-right  pt-6 dark:text-[#ccc]  w-[70%]  '>
               <span className='text-about pr-2 font-medium '>ABOUT </span> <span>I&apos;m Koye, a developer with a passion for developing and implementing experiences that standout.</span>
               <span className=''> Available for freelance projects and full-time positions.</span>
             </div>
