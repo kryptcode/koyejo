@@ -54,7 +54,7 @@
 }
 
 .hover-orange {
-  background: linear-gradient(to top, #d1bfa7 50%, #333 50%);
+  background: linear-gradient(to top, #d1bfa7 50%, #222 50%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
