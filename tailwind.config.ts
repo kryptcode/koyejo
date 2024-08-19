@@ -41,11 +41,18 @@ const config = {
       fontFamily: {
         "grotesk": ["Space Grotesk", "sans-serif"],
         "inter": ["Inter", "sans-serif"],
-        "ham": ["Hanken Grotesk"]
+        "ham": ["Hanken Grotesk", "sans-serif"],
+        "rale": ["Raleway", "sans-serif"],
+        "manrope": ["Manrope", "sans-serif"],
+        "bebas": ["Bebas Neue", "sans-serif"],
+        "outward": ["outward-round-webfont"]
       },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
+        bg: "#111111",
+        about: "#777777",
+        normaltext: "#aaa",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

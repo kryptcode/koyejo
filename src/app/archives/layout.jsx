@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   ]);
   return (
     <div className='relative max-w-[1440px] bg-white text-black dark:bg-black dark:text-[#ddd] flex flex-col font-grotesk min-h-[100vh] w-full'>
-      <PageDock />
+      {/* <PageDock /> */}
 
       <div className="flex-grow">
         <div className=" flex items-start mx-auto h-full">
